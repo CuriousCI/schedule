@@ -1,0 +1,58 @@
+[
+    {
+        "id": "IB",
+        "name": "Isabella",
+        "surname": "Birindelli",
+        "github": "",
+        "website": ""
+    },
+    {
+        "id": "AS",
+        "name": "Andrea",
+        "surname": "Sterbini",
+        "github": "",
+        "website": ""
+    },
+    {
+        "id": "LC",
+        "name": "Lorenzo",
+        "surname": "Carlucci",
+        "github": "",
+        "website": ""
+    },
+    {
+        "id": "SP",
+        "name": "Salvatore",
+        "surname": "Pontarelli",
+        "github": "",
+        "website": ""
+    },
+    {
+        "id": "M",
+        "name": "Luca Massimo Andrea",
+        "surname": "Martinazzi",
+        "github": "",
+        "website": ""
+    },
+    {
+        "id": "IM",
+        "name": "Iacopo",
+        "surname": "Masi",
+        "github": "",
+        "website": ""
+    },
+    {
+        "id": "AP",
+        "name": "Adolfo",
+        "surname": "Piperno",
+        "github": "",
+        "website": ""
+    },
+    {
+        "id": "AM",
+        "name": "Annalisa",
+        "surname": "Massini",
+        "github": "",
+        "website": ""
+    }
+]

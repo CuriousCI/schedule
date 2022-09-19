@@ -1,0 +1,27 @@
+[
+    {
+        "code": "CU032",
+        "room": "aula I",
+        "map": ""
+    },
+    {
+        "code": "CU045",
+        "room": "aula T1",
+        "map": ""
+    },
+    {
+        "code": "RM025",
+        "room": "aula informatica 15 / 17",
+        "map": ""
+    },
+    {
+        "code": "RM111",
+        "room": "aula magna",
+        "map": ""
+    },
+    {
+        "code": "CU046",
+        "room": "aula T2",
+        "map": ""
+    }
+]
