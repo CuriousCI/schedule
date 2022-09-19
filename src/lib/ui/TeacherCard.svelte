@@ -5,9 +5,11 @@
 </script>
 
 <div class="flex flex-col justify-center items-center">
-	<a href={teacher.website} class="text-fg text-xl">
+	<span class="text-xl mb-2">
 		{teacher.name}
 		{teacher.surname}
-	</a>
+	</span>
 	<a href={teacher.github}>GitHub 🐙</a>
+	<a href={teacher.website}>Sito ⌨️</a>
+	<a href="mailto:{teacher.website}">Email 📤</a>
 </div>

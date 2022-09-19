@@ -27,5 +27,10 @@ body {
 
 body {
     background: var(--bg);
+}
+
+* {
     color: var(--fg);
+    background: var(--bg);
+    border-color: var(--fg);
 }
