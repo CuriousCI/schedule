@@ -9,6 +9,9 @@ const config = {
 
 	kit: {
 		trailingSlash: 'always',
+		paths: {
+			base: '/schedule'
+		},
 		adapter: adapter({
 			pages: 'docs',
 			assets: 'docs'
