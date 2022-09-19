@@ -1,0 +1,22 @@
+[
+    {
+        "id": "CD",
+        "code": "101226",
+        "teaching": "Calcolo differenziale"
+    },
+    {
+        "id": "FP",
+        "code": "1015883",
+        "teaching": "Fondamenti di programmazione"
+    },
+    {
+        "id": "MM",
+        "code": "1020420",
+        "teaching": "Metodi matematici per l'informatica"
+    },
+    {
+        "id": "SD",
+        "code": "1015880",
+        "teaching": "Progettazione di sistemi digitali"
+    }
+]

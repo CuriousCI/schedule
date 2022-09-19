@@ -1,0 +1,75 @@
+{
+    "monday": [
+        {
+            "subject": "CD",
+            "teacher": "IB",
+            "building": "CU032",
+            "from": "08:00",
+            "to": "11:00"
+        },
+        {
+            "subject": "FP",
+            "teacher": "AS",
+            "building": "CU032",
+            "from": "10:00",
+            "to": "13:00"
+        }
+    ],
+    "tuesday": [
+        {
+            "subject": "SD",
+            "teacher": "SP",
+            "building": "CU032",
+            "from": "08:00",
+            "to": "11:00"
+        },
+        {
+            "subject": "MM",
+            "teacher": "LC",
+            "building": "CU032",
+            "from": "11:00",
+            "to": "13:00"
+        }
+    ],
+    "wednesday": [
+        {
+            "subject": "FP",
+            "teacher": "AS",
+            "building": "RM025",
+            "from": "09:00",
+            "to": "12:00"
+        }
+    ],
+    "thursday": [
+        {
+            "subject": "MM",
+            "teacher": "LC",
+            "building": "RM111",
+            "from": "08:00",
+            "to": "11:00"
+        },
+        {
+            "subject": "FP",
+            "teacher": "AS",
+            "building": "RM111",
+            "from": "11:00",
+            "to": "13:00"
+        }
+    ],
+    "friday": [
+        {
+            "subject": "CD",
+            "teacher": "IB",
+            "building": "CU045",
+            "from": "08:00",
+            "to": "11:00"
+        },
+        {
+            "subject": "SD",
+            "teacher": "SP",
+            "building": "CU045",
+            "from": "11:00",
+            "to": "13:00"
+        }
+    ]
+}
