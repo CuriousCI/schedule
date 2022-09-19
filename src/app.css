@@ -34,3 +34,10 @@ body {
     background: var(--bg);
     border-color: var(--fg);
 }
+
+table,
+th,
+td {
+    border: 1px solid;
+    text-align: center;
+}

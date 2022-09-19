@@ -1,27 +1,28 @@
 <script lang="ts">
+	import '../app.css';
 	import TeacherCard from '$lib/ui/TeacherCard.svelte';
 	import Tooltip from '$lib/ui/Tooltip.svelte';
-	import '../app.css';
 	import type Teacher from '$lib/models/Teacher';
+	import type Building from '$lib/models/Building';
 	import { onMount } from 'svelte';
+	import BuildingCard from '$lib/ui/BuildingCard.svelte';
+	import type Subject from '$lib/models/Subject';
+	import Timetable from '$lib/ui/Timetable.svelte';
 
 	let teachers: Teacher[] = [];
+	let buildings: Building[] = [];
+	let subjects: Subject[] = [];
 
 	onMount(async () => {
 		teachers = await (await fetch('teachers.json')).json();
+		buildings = await (await fetch('buildings.json')).json();
+		subjects = await (await fetch('subjects.json')).json();
 	});
-
-	// let teacher: Teacher = {
-	// 	id: 'MP',
-	// 	name: 'Marco',
-	// 	surname: 'Polo',
-	// 	github: 'https://github.com/CuriousCI',
-	// 	website: ''
-	// };
 </script>
 
 <main class="grid place-items-center h-screen">
-	{#each teachers as teacher}
+	<Timetable timetable={{}} />
+	<!-- {#each teachers as teacher}
 		<Tooltip>
 			{teacher.name}
 			{teacher.surname}
@@ -30,12 +31,15 @@
 			</div>
 		</Tooltip>
 	{/each}
-	<!-- <Tooltip>
-		Marco Polo
-		<div slot="info">
-			<TeacherCard {teacher} />
-		</div>
-	</Tooltip> -->
+
+	{#each buildings as building}
+		<Tooltip>
+			{building.code}
+			<div slot="info">
+				<BuildingCard {building} />
+			</div>
+		</Tooltip>
+	{/each} -->
 </main>
 
 <style>
