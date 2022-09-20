@@ -2,21 +2,25 @@
     {
         "id": "CD",
         "code": "101226",
-        "teaching": "Calcolo differenziale"
+        "teaching": "Calcolo differenziale",
+        "color": "red"
     },
     {
         "id": "FP",
         "code": "1015883",
-        "teaching": "Fondamenti di programmazione"
+        "teaching": "Fondamenti di programmazione",
+        "color": "green"
     },
     {
         "id": "MM",
         "code": "1020420",
-        "teaching": "Metodi matematici per l'informatica"
+        "teaching": "Metodi matematici per l'informatica",
+        "color": "blue"
     },
     {
         "id": "SD",
         "code": "1015880",
-        "teaching": "Progettazione di sistemi digitali"
+        "teaching": "Progettazione di sistemi digitali",
+        "color": "yellow"
     }
 ]

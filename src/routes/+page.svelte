@@ -29,7 +29,7 @@
 		);
 
 		const t: Map<string, { [key: string]: string }[]> = new Map(
-			Object.entries(await (await fetch('timetable.json')).json())
+			Object.entries(await (await fetch('channel1.json')).json())
 		);
 
 		for (let [day, classes] of t.entries()) {
@@ -53,5 +53,9 @@
 </script>
 
 <main class="grid place-items-center h-screen">
-	<Timetable {timetable} />
+	<input type="text" class="absolute top-4 left-4" />
+	<Timetable
+		{timetable}
+		hours={['08:00', '09:00', '10:00', '11:00', '12:00', '16:00', '17:00', '18:00']}
+	/>
 </main>

@@ -1,0 +1,84 @@
+{
+    "monday": [
+        {
+            "subject": "CD",
+            "teacher": "M",
+            "building": "CU046",
+            "from": "08:00",
+            "to": "11:00",
+            "duration": 3
+        },
+        {
+            "subject": "MM",
+            "teacher": "AP",
+            "building": "CU046",
+            "from": "11:00",
+            "to": "13:00",
+            "duration": 2
+        }
+    ],
+    "tuesday": [
+        {
+            "subject": "FP",
+            "teacher": "IM",
+            "building": "CU046",
+            "from": "08:00",
+            "to": "11:00",
+            "duration": 3
+        },
+        {
+            "subject": "SD",
+            "teacher": "AM",
+            "building": "CU046",
+            "from": "11:00",
+            "to": "13:00",
+            "duration": 2
+        }
+    ],
+    "wednesday": [
+        {
+            "subject": "FP",
+            "teacher": "IM",
+            "building": "RM025",
+            "from": "16:00",
+            "to": "19:00",
+            "duration": 3
+        }
+    ],
+    "thursday": [
+        {
+            "subject": "MM",
+            "teacher": "AP",
+            "building": "CU046",
+            "from": "08:00",
+            "to": "11:00",
+            "duration": 3
+        },
+        {
+            "subject": "FP",
+            "teacher": "IM",
+            "building": "CU046",
+            "from": "11:00",
+            "to": "13:00",
+            "duration": 2
+        }
+    ],
+    "friday": [
+        {
+            "subject": "CD",
+            "teacher": "M",
+            "building": "CU046",
+            "from": "08:00",
+            "to": "10:00",
+            "duration": 2
+        },
+        {
+            "subject": "SD",
+            "teacher": "AM",
+            "building": "CU046",
+            "from": "10:00",
+            "to": "13:00",
+            "duration": 3
+        }
+    ]
+}
