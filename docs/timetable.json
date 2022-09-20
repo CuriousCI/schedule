@@ -5,14 +5,16 @@
             "teacher": "IB",
             "building": "CU032",
             "from": "08:00",
-            "to": "11:00"
+            "to": "11:00",
+            "duration": 3
         },
         {
             "subject": "FP",
             "teacher": "AS",
             "building": "CU032",
-            "from": "10:00",
-            "to": "13:00"
+            "from": "11:00",
+            "to": "13:00",
+            "duration": 2
         }
     ],
     "tuesday": [
@@ -21,14 +23,16 @@
             "teacher": "SP",
             "building": "CU032",
             "from": "08:00",
-            "to": "11:00"
+            "to": "11:00",
+            "duration": 3
         },
         {
             "subject": "MM",
             "teacher": "LC",
             "building": "CU032",
             "from": "11:00",
-            "to": "13:00"
+            "to": "13:00",
+            "duration": 2
         }
     ],
     "wednesday": [
@@ -37,7 +41,8 @@
             "teacher": "AS",
             "building": "RM025",
             "from": "09:00",
-            "to": "12:00"
+            "to": "12:00",
+            "duration": 3
         }
     ],
     "thursday": [
@@ -46,14 +51,16 @@
             "teacher": "LC",
             "building": "RM111",
             "from": "08:00",
-            "to": "11:00"
+            "to": "11:00",
+            "duration": 3
         },
         {
             "subject": "FP",
             "teacher": "AS",
             "building": "RM111",
             "from": "11:00",
-            "to": "13:00"
+            "to": "13:00",
+            "duration": 2
         }
     ],
     "friday": [
@@ -62,14 +69,16 @@
             "teacher": "IB",
             "building": "CU045",
             "from": "08:00",
-            "to": "11:00"
+            "to": "11:00",
+            "duration": 3
         },
         {
             "subject": "SD",
             "teacher": "SP",
             "building": "CU045",
             "from": "11:00",
-            "to": "13:00"
+            "to": "13:00",
+            "duration": 2
         }
     ]
 }

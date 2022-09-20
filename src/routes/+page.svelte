@@ -1,46 +1,57 @@
 <script lang="ts">
 	import '../app.css';
-	import TeacherCard from '$lib/ui/TeacherCard.svelte';
-	import Tooltip from '$lib/ui/Tooltip.svelte';
 	import type Teacher from '$lib/models/Teacher';
 	import type Building from '$lib/models/Building';
-	import { onMount } from 'svelte';
-	import BuildingCard from '$lib/ui/BuildingCard.svelte';
 	import type Subject from '$lib/models/Subject';
+	import type Class from '$lib/models/Class';
 	import Timetable from '$lib/ui/Timetable.svelte';
+	import { onMount } from 'svelte';
 
-	let teachers: Teacher[] = [];
-	let buildings: Building[] = [];
-	let subjects: Subject[] = [];
+	let teachers: Map<string, Teacher>,
+		buildings: Map<string, Building>,
+		subjects: Map<string, Subject>,
+		timetable: Map<string, Class[]> = new Map();
 
 	onMount(async () => {
-		teachers = await (await fetch('teachers.json')).json();
-		buildings = await (await fetch('buildings.json')).json();
-		subjects = await (await fetch('subjects.json')).json();
+		teachers = new Map(
+			(await (await fetch('teachers.json')).json()).map((teacher: Teacher) => [teacher.id, teacher])
+		);
+
+		buildings = new Map(
+			(await (await fetch('buildings.json')).json()).map((building: Building) => [
+				building.code,
+				building
+			])
+		);
+
+		subjects = new Map(
+			(await (await fetch('subjects.json')).json()).map((subject: Subject) => [subject.id, subject])
+		);
+
+		const t: Map<string, { [key: string]: string }[]> = new Map(
+			Object.entries(await (await fetch('timetable.json')).json())
+		);
+
+		for (let [day, classes] of t.entries()) {
+			timetable.set(
+				day,
+				classes.map((_class: { [key: string]: string }) => {
+					return {
+						subject: subjects.get(_class['subject']),
+						teacher: teachers.get(_class['teacher']),
+						building: buildings.get(_class['building']),
+						from: _class['from'],
+						to: _class['to'],
+						duration: parseInt(_class['duration'])
+					} as Class;
+				})
+			);
+		}
+
+		timetable = timetable;
 	});
 </script>
 
 <main class="grid place-items-center h-screen">
-	<Timetable timetable={{}} />
-	<!-- {#each teachers as teacher}
-		<Tooltip>
-			{teacher.name}
-			{teacher.surname}
-			<div slot="info">
-				<TeacherCard {teacher} />
-			</div>
-		</Tooltip>
-	{/each}
-
-	{#each buildings as building}
-		<Tooltip>
-			{building.code}
-			<div slot="info">
-				<BuildingCard {building} />
-			</div>
-		</Tooltip>
-	{/each} -->
+	<Timetable {timetable} />
 </main>
-
-<style>
-</style>

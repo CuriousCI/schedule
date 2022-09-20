@@ -1,16 +1,16 @@
 <script lang="ts">
 	import type Building from '$lib/models/Building';
 
-	export let building: Building;
+	export let building: Building | undefined;
 </script>
 
 <div class="flex flex-col justify-center items-center">
 	<span class="text-xl mb-2">
-		{building.code}
-		<b>{building.room}</b>
+		{building?.code}
+		<b>{building?.room}</b>
 	</span>
 	<iframe
-		src={building.map}
+		src={building?.map}
 		title="Google Maps"
 		width="600"
 		height="450"
