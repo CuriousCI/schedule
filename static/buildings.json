@@ -7,21 +7,21 @@
     {
         "code": "CU045",
         "room": "aula T1",
-        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4199.521312259498!2d12.515882945840128!3d41.90339406347435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6177e196aec3%3A0x935e04da31bc2c9f!2sViale%20Regina%20Elena%2C%20334%2C%2000161%20Roma%20RM!5e0!3m2!1sen!2sit!4v1663592823937!5m2!1sen!2sit"
+        "map": "https://web.uniroma1.it/disp/sites/default/files/Mappa%20CITTA%20UNIVERSITARIA.pdf"
     },
     {
         "code": "RM025",
         "room": "aula informatica 15 / 17",
-        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4199.521312259498!2d12.515882945840128!3d41.90339406347435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6177e196aec3%3A0x935e04da31bc2c9f!2sViale%20Regina%20Elena%2C%20334%2C%2000161%20Roma%20RM!5e0!3m2!1sen!2sit!4v1663592823937!5m2!1sen!2sit"
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.671648589064!2d12.514125515799826!3d41.89991817202676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f619c8531af3b%3A0xa5e02560c928639e!2sVia%20Tiburtina%2C%20205%2C%2000185%20Roma%20RM!5e0!3m2!1sit!2sit!4v1664039689665!5m2!1sit!2sit"
     },
     {
         "code": "RM111",
         "room": "aula magna",
-        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4199.521312259498!2d12.515882945840128!3d41.90339406347435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6177e196aec3%3A0x935e04da31bc2c9f!2sViale%20Regina%20Elena%2C%20334%2C%2000161%20Roma%20RM!5e0!3m2!1sen!2sit!4v1663592823937!5m2!1sen!2sit"
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.435642354752!2d12.51290503328173!3d41.90499280525346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6177eefdea53%3A0xc9aaf8ef48892b9a!2sViale%20Regina%20Elena%2C%20295%2C%2000161%20Roma%20RM!5e0!3m2!1sit!2sit!4v1664039864404!5m2!1sit!2sit"
     },
     {
         "code": "CU046",
         "room": "aula T2",
-        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4199.521312259498!2d12.515882945840128!3d41.90339406347435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6177e196aec3%3A0x935e04da31bc2c9f!2sViale%20Regina%20Elena%2C%20334%2C%2000161%20Roma%20RM!5e0!3m2!1sen!2sit!4v1663592823937!5m2!1sen!2sit"
+        "map": "https://web.uniroma1.it/disp/sites/default/files/Mappa%20CITTA%20UNIVERSITARIA.pdf"
     }
 ]
