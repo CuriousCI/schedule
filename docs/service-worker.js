@@ -1,15 +1,15 @@
 const i = [
-  "/schedule/_app/immutable/start-27be635a.js",
+  "/schedule/_app/immutable/start-a3b78f14.js",
   "/schedule/_app/immutable/components/layout.svelte-ac6a93da.js",
-  "/schedule/_app/immutable/components/error.svelte-26e44bb2.js",
+  "/schedule/_app/immutable/components/error.svelte-47a91901.js",
   "/schedule/_app/immutable/components/pages/_page.svelte-3a13c998.js",
   "/schedule/_app/immutable/assets/_page-b0f78fea.css",
   "/schedule/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js",
-  "/schedule/_app/immutable/chunks/singletons-0aff5cda.js",
+  "/schedule/_app/immutable/chunks/singletons-a18079e5.js",
   "/schedule/_app/immutable/chunks/index-d10d3ea9.js",
   "/schedule/_app/immutable/chunks/_layout-8d2a742b.js",
   "/schedule/_app/immutable/chunks/0-40490e2d.js",
-  "/schedule/_app/immutable/chunks/1-7f3131c9.js",
+  "/schedule/_app/immutable/chunks/1-e966be64.js",
   "/schedule/_app/immutable/chunks/2-ba00064d.js"
 ], d = [
   "/schedule/.nojekyll",
@@ -22,7 +22,7 @@ const i = [
   "/schedule/manifest.json",
   "/schedule/subjects.json",
   "/schedule/teachers.json"
-], l = "1664116027593", c = self, o = `cache${l}`, h = i.concat(d), p = new Set(h);
+], l = "1664116150378", c = self, o = `cache${l}`, h = i.concat(d), p = new Set(h);
 c.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(o).then((s) => s.addAll(h)).then(() => {
