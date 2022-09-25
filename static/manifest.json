@@ -1,7 +1,7 @@
 {
 	"short_name": "schedule",
 	"name": "Uni Schedule",
-	"start_url" : "/schedule",
+	"start_url" : "/",
 	"prefer_related_applications": false,
 	"related_applications": [],
 	"icons": [
