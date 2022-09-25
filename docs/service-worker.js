@@ -1,15 +1,15 @@
 const i = [
-  "/schedule/_app/immutable/start-2d60a401.js",
+  "/schedule/_app/immutable/start-2e5a2e52.js",
   "/schedule/_app/immutable/components/layout.svelte-ac6a93da.js",
-  "/schedule/_app/immutable/components/error.svelte-88c79da6.js",
+  "/schedule/_app/immutable/components/error.svelte-331ccccf.js",
   "/schedule/_app/immutable/components/pages/_page.svelte-3a13c998.js",
   "/schedule/_app/immutable/assets/_page-b0f78fea.css",
   "/schedule/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js",
-  "/schedule/_app/immutable/chunks/singletons-1095f581.js",
+  "/schedule/_app/immutable/chunks/singletons-37bca188.js",
   "/schedule/_app/immutable/chunks/index-d10d3ea9.js",
   "/schedule/_app/immutable/chunks/_layout-8d2a742b.js",
   "/schedule/_app/immutable/chunks/0-40490e2d.js",
-  "/schedule/_app/immutable/chunks/1-2c555de7.js",
+  "/schedule/_app/immutable/chunks/1-10644df4.js",
   "/schedule/_app/immutable/chunks/2-ba00064d.js"
 ], d = [
   "/schedule/.nojekyll",
@@ -22,40 +22,40 @@ const i = [
   "/schedule/manifest.json",
   "/schedule/subjects.json",
   "/schedule/teachers.json"
-], l = "1664115573932", c = self, o = `cache${l}`, h = i.concat(d), p = new Set(h);
-c.addEventListener("install", (e) => {
+], l = "1664115742383", t = self, o = `cache${l}`, h = i.concat(d), p = new Set(h);
+t.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(o).then((s) => s.addAll(h)).then(() => {
-      c.skipWaiting();
+      t.skipWaiting();
     })
   );
 });
-c.addEventListener("activate", (e) => {
+t.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then(async (s) => {
-      for (const t of s)
-        t !== o && await caches.delete(t);
-      c.clients.claim();
+      for (const c of s)
+        c !== o && await caches.delete(c);
+      t.clients.claim();
     })
   );
 });
 async function r(e) {
   const s = await caches.open(`offline${l}`);
   try {
-    const t = await fetch(e);
-    return s.put(e, t.clone()), t;
-  } catch (t) {
+    const c = await fetch(e);
+    return s.put(e, c.clone()), c;
+  } catch (c) {
     const a = await s.match(e);
     if (a)
       return a;
-    throw t;
+    throw c;
   }
 }
-c.addEventListener("fetch", (e) => {
+t.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const s = new URL(e.request.url), t = s.protocol.startsWith("http"), a = s.hostname === self.location.hostname && s.port !== self.location.port, n = s.host === self.location.host && p.has(s.pathname), u = e.request.cache === "only-if-cached" && !n;
-  t && !a && !u && e.respondWith(
+  const s = new URL(e.request.url), c = s.protocol.startsWith("http"), a = s.hostname === self.location.hostname && s.port !== self.location.port, n = s.host === self.location.host && p.has(s.pathname), u = e.request.cache === "only-if-cached" && !n;
+  c && !a && !u && e.respondWith(
     (async () => n && await caches.match(e.request) || r(e.request))()
   );
 });

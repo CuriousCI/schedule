@@ -1,7 +1,7 @@
 {
 	"short_name": "schedule",
 	"name": "Uni Schedule",
-	"start_url" : "/schedule",
+	"start_url" : "/",
 	"prefer_related_applications": false,
 	"related_applications": [],
 	"icons": [
@@ -30,7 +30,7 @@
 	],
 	"background_color": "#ffffff",
 	"display": "standalone",
-	"scope": "/",
+	"scope": "/schedule",
 	"theme_color": "#282828",
 	"description": "College schedule app"
 }
