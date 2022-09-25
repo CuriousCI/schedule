@@ -2,11 +2,32 @@
 	"short_name": "schedule",
 	"name": "Uni Schedule",
 	"start_url" : "/schedule",
-	"icons": [{
-		"src": "logo_512.png",
-		"type": "image/png",
-		"sizes": "512x512"
-	}],
+	"prefer_related_applications": false,
+	"related_applications": [],
+	"icons": [
+		{
+			"src": "logo_512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		},
+		{
+			"src": "logo_512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		},
+		{
+			"src": "logo_192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "logo_192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "maskable"
+		}
+	],
 	"background_color": "#ffffff",
 	"display": "standalone",
 	"scope": "/",
