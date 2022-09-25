@@ -3,19 +3,17 @@
 ## TODO
 
 - [ ] Better UI/UX
-  - [ ] light/dark mode
+  - [x] light/dark mode
   - [ ] rounded borders
   - [ ] multiple themes
-  - [ ] minimal buttons
-  - [ ] light/dark mode
+  - [x] minimal buttons
   - [ ] channel switch
   - [ ] bottom dock for quick info
-    - [ ] desktop right dock
-    - [ ] mobile bottom dock
+    - [x] mobile bottom dock
   - [ ] quick map button
 - [ ] Functionality
-  - [ ] convert website into a PWA
-  - [ ] add a pwa logo
+  - [x] convert website into a PWA
+  - [x] add a pwa logo
   - [ ] pdfs to pictures
   - [ ] day to day switch
 - [ ] Mobile friendly

@@ -23,13 +23,11 @@
 	<slot />
 	{#if hover}
 		{#if x > innerWidth / 2}
-			<span
-				class="z-10 absolute left-1/2 -translate-x-full -translate-y-1/2 w-fit p-4 border-2 bg-bg"
-			>
+			<span class="z-10 absolute left-1/2 -translate-x-full -translate-y-1/2 w-fit p-4 border-2">
 				<slot name="info" />
 			</span>
 		{:else}
-			<span class="z-10 absolute -translate-y-1/2 w-fit p-4 border-2 bg-bg">
+			<span class="z-10 absolute -translate-y-1/2 w-fit p-4 border-2">
 				<slot name="info" />
 			</span>
 		{/if}

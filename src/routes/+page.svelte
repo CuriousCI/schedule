@@ -1,9 +1,11 @@
 <script lang="ts">
 	import '../app.css';
+
 	import type Teacher from '$lib/models/Teacher';
 	import type Building from '$lib/models/Building';
 	import type Subject from '$lib/models/Subject';
 	import type Class from '$lib/models/Class';
+	import App from '$lib/ui/App.svelte';
 	import Timetable from '$lib/ui/Timetable.svelte';
 	import { onMount } from 'svelte';
 
@@ -75,12 +77,16 @@
 	});
 </script>
 
-<main class="grid place-items-center h-screen">
-	<h1 class="self-end text-xl font-bold">Channel 1</h1>
+<!-- <main class="grid place-items-center h-screen"> -->
+<!-- <h1 class="self-end text-xl font-bold">Channel 1</h1> -->
+<App>
 	<Timetable timetable={channel1} />
+	<div slot="actions" />
+</App>
+<!-- </main> -->
 
-	<h1 class="self-end text-xl font-bold">Channel 2</h1>
-	<Timetable
+<!-- <h1 class="self-end text-xl font-bold">Channel 2</h1> -->
+<!-- <Timetable
 		timetable={channel2}
 		hours={[
 			'08:00',
@@ -95,5 +101,4 @@
 			'17:00',
 			'18:00'
 		]}
-	/>
-</main>
+	/> -->

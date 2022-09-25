@@ -41,24 +41,28 @@
 		<thead>
 			<tr>
 				<th />
-				<th>Monday</th>
-				<th>Tuesday</th>
-				<th>Wednesday</th>
-				<th>Thursday</th>
-				<th>Friday</th>
+				<th>M</th>
+				<th>T</th>
+				<th>W</th>
+				<th>T</th>
+				<th>F</th>
 			</tr>
 		</thead>
 		<tbody>
 			{#each hours as hour}
 				<tr>
-					<td>{hour} - {offsetTime(hour, 1)}</td>
+					<!-- <td>{hour} - {offsetTime(hour, 1)}</td> -->
+					<td>{hour}</td>
 					{#each days as day}
 						{#if grid.get(`${hour}${day}`)}
 							{#each timetable.get(day) || [] as _class}
 								{#if _class.from == hour}
-									<td rowspan={_class.duration} style="background: var(--{_class.subject?.color})">
+									<td
+										rowspan={_class.duration}
+										style="background: var(--{_class.subject?.color}Dim)"
+									>
 										<Tooltip>
-											<span class="text-bg text-xl font-bold">{_class.subject?.id}</span>
+											<span class="text-xl font-bold">{_class.subject?.id}</span>
 											<div slot="info">
 												<ClassCard {_class} />
 											</div>
