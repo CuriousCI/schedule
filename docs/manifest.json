@@ -30,7 +30,7 @@
 	],
 	"background_color": "#ffffff",
 	"display": "standalone",
-	"scope": "/schedule",
+	"scope": "/",
 	"theme_color": "#282828",
 	"description": "College schedule app"
 }
