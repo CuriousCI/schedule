@@ -1,0 +1,15 @@
+{
+	"short_name": "schedule",
+	"name": "Uni Schedule",
+	"start_url" : "/schedule",
+	"icons": [{
+		"src": "logo_512.png",
+		"type": "image/png",
+		"sizes": "512x512"
+	}],
+	"background_color": "#ffffff",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#282828",
+	"description": "College schedule app"
+}

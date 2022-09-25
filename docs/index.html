@@ -2,20 +2,30 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<link rel="manifest" crossorigin="use-credentials" href="manifest.json" />
 		<link
 			rel="icon"
 			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📜</text></svg>"
 		/>
 		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="University Schedule shortcuts & manager" />
 		<meta http-equiv="content-security-policy" content="">
-	<link href="/schedule/_app/immutable/assets/_page-fc282ef2.css" rel="stylesheet">
-	<link rel="modulepreload" href="/schedule/_app/immutable/start-c5e879f9.js">
+	<link href="/schedule/_app/immutable/assets/_page-b0f78fea.css" rel="stylesheet">
+	<link rel="modulepreload" href="/schedule/_app/immutable/start-2a457a9e.js">
 	<link rel="modulepreload" href="/schedule/_app/immutable/chunks/index-d10d3ea9.js">
-	<link rel="modulepreload" href="/schedule/_app/immutable/chunks/singletons-fff2b1be.js">
+	<link rel="modulepreload" href="/schedule/_app/immutable/chunks/singletons-cb96ce2c.js">
 	<link rel="modulepreload" href="/schedule/_app/immutable/components/layout.svelte-ac6a93da.js">
 	<link rel="modulepreload" href="/schedule/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js">
 	<link rel="modulepreload" href="/schedule/_app/immutable/chunks/_layout-8d2a742b.js">
-	<link rel="modulepreload" href="/schedule/_app/immutable/components/pages/_page.svelte-74639ac3.js">
+	<link rel="modulepreload" href="/schedule/_app/immutable/components/pages/_page.svelte-3a13c998.js">
+			<script>
+		if ('serviceWorker' in navigator) {
+			addEventListener('load', function () {
+				navigator.serviceWorker.register('/schedule/service-worker.js');
+			});
+		}
+	</script>
+		<title>Uni Schedule</title>
 	</head>
 	<body>
 		<div>
@@ -73,7 +83,7 @@
 
 
 		<script type="module" data-sveltekit-hydrate="i4xxec">
-		import { start } from "/schedule/_app/immutable/start-c5e879f9.js";
+		import { start } from "/schedule/_app/immutable/start-2a457a9e.js";
 
 		start({
 			env: {},
