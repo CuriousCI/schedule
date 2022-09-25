@@ -1,19 +1,15 @@
-const o = {
-  toString: () => {
-    throw new Error("`timestamp` has been removed from $service-worker. Use `version` instead");
-  }
-}, u = [
-  "/schedule/_app/immutable/start-03d8a5fe.js",
+const i = [
+  "/schedule/_app/immutable/start-a7163a02.js",
   "/schedule/_app/immutable/components/layout.svelte-ac6a93da.js",
-  "/schedule/_app/immutable/components/error.svelte-443e10ef.js",
+  "/schedule/_app/immutable/components/error.svelte-d29a3191.js",
   "/schedule/_app/immutable/components/pages/_page.svelte-3a13c998.js",
   "/schedule/_app/immutable/assets/_page-b0f78fea.css",
   "/schedule/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js",
-  "/schedule/_app/immutable/chunks/singletons-41b9e760.js",
+  "/schedule/_app/immutable/chunks/singletons-99f52e0a.js",
   "/schedule/_app/immutable/chunks/index-d10d3ea9.js",
   "/schedule/_app/immutable/chunks/_layout-8d2a742b.js",
   "/schedule/_app/immutable/chunks/0-40490e2d.js",
-  "/schedule/_app/immutable/chunks/1-327fde36.js",
+  "/schedule/_app/immutable/chunks/1-04922564.js",
   "/schedule/_app/immutable/chunks/2-ba00064d.js"
 ], d = [
   "/schedule/.nojekyll",
@@ -26,10 +22,10 @@ const o = {
   "/schedule/manifest.json",
   "/schedule/subjects.json",
   "/schedule/teachers.json"
-], c = self, l = `cache${o}`, h = u.concat(d), r = new Set(h);
+], l = "1664117158967", c = self, o = `cache${l}`, h = i.concat(d), p = new Set(h);
 c.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(l).then((s) => s.addAll(h)).then(() => {
+    caches.open(o).then((s) => s.addAll(h)).then(() => {
       c.skipWaiting();
     })
   );
@@ -38,13 +34,13 @@ c.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then(async (s) => {
       for (const t of s)
-        t !== l && await caches.delete(t);
+        t !== o && await caches.delete(t);
       c.clients.claim();
     })
   );
 });
-async function p(e) {
-  const s = await caches.open(`offline${o}`);
+async function r(e) {
+  const s = await caches.open(`offline${l}`);
   try {
     const t = await fetch(e);
     return s.put(e, t.clone()), t;
@@ -58,8 +54,8 @@ async function p(e) {
 c.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const s = new URL(e.request.url), t = s.protocol.startsWith("http"), a = s.hostname === self.location.hostname && s.port !== self.location.port, n = s.host === self.location.host && r.has(s.pathname), i = e.request.cache === "only-if-cached" && !n;
-  t && !a && !i && e.respondWith(
-    (async () => n && await caches.match(e.request) || p(e.request))()
+  const s = new URL(e.request.url), t = s.protocol.startsWith("http"), a = s.hostname === self.location.hostname && s.port !== self.location.port, n = s.host === self.location.host && p.has(s.pathname), u = e.request.cache === "only-if-cached" && !n;
+  t && !a && !u && e.respondWith(
+    (async () => n && await caches.match(e.request) || r(e.request))()
   );
 });
