@@ -57,10 +57,7 @@
 						{#if grid.get(`${hour}${day}`)}
 							{#each timetable.get(day) || [] as _class}
 								{#if _class.from == hour}
-									<td
-										rowspan={_class.duration}
-										style="background: var(--{_class.subject?.color}Dim)"
-									>
+									<td rowspan={_class.duration} style="color: var(--{_class.subject?.color});">
 										<Tooltip>
 											<span class="text-xl font-bold">{_class.subject?.id}</span>
 											<div slot="info">
