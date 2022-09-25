@@ -9,6 +9,8 @@
 	import Timetable from '$lib/ui/Timetable.svelte';
 	import { onMount } from 'svelte';
 	import Button from '$lib/ui/Button.svelte';
+	import { select_option } from 'svelte/internal';
+	import Dock from '$lib/ui/Dock.svelte';
 
 	let teachers: Map<string, Teacher>,
 		buildings: Map<string, Building>,
@@ -77,57 +79,43 @@
 		channel2 = channel2;
 	});
 
-	let actions = [
-		{
-			label: 'Oggi',
-			icon: 'today',
-			selected: true
-		},
-		{
-			label: 'Domani',
-			icon: 'early_on',
-			selected: false
-		},
-		{
-			label: 'Calendario',
-			icon: 'calendar_view_week',
-			selected: false
-		}
-	];
+	let action = 'Oggi',
+		actions = [
+			{
+				label: 'Oggi',
+				icon: 'today'
+			},
+			{
+				label: 'Domani',
+				icon: 'early_on'
+			},
+			{
+				label: 'Calendario',
+				icon: 'calendar_view_week'
+			}
+		],
+		openDock = false;
 </script>
 
-<!-- <main class="grid place-items-center h-screen"> -->
-<!-- <h1 class="self-end text-xl font-bold">Channel 1</h1> -->
 <App>
-	<Timetable timetable={channel1} />
+	{#if action == 'Oggi'}
+		<span on:click={() => (openDock = !openDock)}>Coming soon...</span>
+	{:else if action == 'Domani'}
+		<span on:click={() => (openDock = !openDock)}>Coming soon...</span>
+	{:else}
+		<Timetable timetable={channel1} />
+	{/if}
 	<div slot="actions" class="flex items-center justify-evenly gap-4">
-		{#each actions as { label, icon, selected }}
-			<Button
-				{label}
-				bind:selected
-				onclick={() => {
-					for (let index in actions) actions[index].selected = actions[index].label == label;
-				}}
-			>
-				{#if selected}
-					<span class="material-symbols-filled text-xl"> {icon} </span>
-				{:else}
-					<span class="material-symbols-outlined text-xl"> {icon} </span>
-				{/if}
+		{#each actions as { label, icon }}
+			<Button {label} selected={label == action} onclick={() => (action = label)}>
+				<span class="material-symbols-{action == label ? 'filled' : 'outlined'} text-xl">
+					{icon}
+				</span>
 			</Button>
 		{/each}
-		<!-- <Button label="Oggi" selected={true} onclick={() => {}}>
-			<span class="material-symbols-outlined text-xl"> today </span>
-		</Button>
-		<Button label="Domani" onclick={() => {}}>
-			<span class="material-symbols-outlined text-xl"> early_on </span>
-		</Button>
-		<Button label="Calendario" onclick={() => {}}>
-			<span class="material-symbols-outlined text-xl"> calendar_view_week </span>
-		</Button> -->
 	</div>
 </App>
-<!-- </main> -->
+<Dock bind:open={openDock} />
 
 <!-- <h1 class="self-end text-xl font-bold">Channel 2</h1> -->
 <!-- <Timetable
