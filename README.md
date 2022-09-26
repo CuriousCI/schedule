@@ -16,6 +16,10 @@
   - [x] add a pwa logo
   - [ ] pdfs to pictures
   - [x] day to day switch
+  - [ ] add both maps & pdf / img link for buildings
+  - [ ] save in localStorage last visited page?
+  - [ ] select startup page?
+  - [ ] favourite links?
 - [x] Mobile friendly
 - [ ] Automatic build script
 

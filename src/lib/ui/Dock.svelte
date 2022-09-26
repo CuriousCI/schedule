@@ -7,7 +7,7 @@
 
 {#if open}
 	<div
-		class="w-full h-full absolute top-0 left-0 bg-bg1 dark:bg-dbg1 blur-3xl rounded-none opacity-70"
+		class="w-full h-full absolute top-0 left-0 bg-bg1 dark:bg-dbg1 blur-3xl rounded-none opacity-60"
 		on:click={() => (open = false)}
 	/>
 	<div
