@@ -9,8 +9,9 @@
 	import Timetable from '$lib/ui/Timetable.svelte';
 	import { onMount } from 'svelte';
 	import Button from '$lib/ui/Button.svelte';
-	import { select_option } from 'svelte/internal';
+	import { now, select_option } from 'svelte/internal';
 	import Dock from '$lib/ui/Dock.svelte';
+	import Day from '$lib/ui/Day.svelte';
 
 	let teachers: Map<string, Teacher>,
 		buildings: Map<string, Building>,
@@ -102,13 +103,30 @@
 		],
 		openDock = false,
 		channel: number;
+
+	let tomorrow = new Date(Date.now());
+	tomorrow.setDate(tomorrow.getDate() + 1);
 </script>
 
 <App bind:channel>
 	{#if action == Menu.Today}
-		<span on:click={() => (openDock = !openDock)}>Coming soon...</span>
+		<Day
+			day={new Date(Date.now())
+				.toLocaleDateString('en-US', {
+					weekday: 'long'
+				})
+				.toLowerCase()}
+			timetable={channel == 1 ? channel1 : channel2}
+		/>
 	{:else if action == Menu.Tomorrow}
-		<span on:click={() => (openDock = !openDock)}>Coming soon...</span>
+		<Day
+			day={tomorrow
+				.toLocaleDateString('en-US', {
+					weekday: 'long'
+				})
+				.toLowerCase()}
+			timetable={channel == 1 ? channel1 : channel2}
+		/>
 	{:else}
 		<Timetable
 			timetable={channel == 1 ? channel1 : channel2}
@@ -139,22 +157,3 @@
 		{/each}
 	</div>
 </App>
-<Dock bind:open={openDock} />
-
-<!-- <h1 class="self-end text-xl font-bold">Channel 2</h1> -->
-<!-- <Timetable
-		timetable={channel2}
-		hours={[
-			'08:00',
-			'09:00',
-			'10:00',
-			'11:00',
-			'12:00',
-			'13:00',
-			'14:00',
-			'15:00',
-			'16:00',
-			'17:00',
-			'18:00'
-		]}
-	/> -->

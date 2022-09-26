@@ -2,10 +2,10 @@
 
 ## TODO
 
+- [ ] multiple themes
 - [ ] Better UI/UX
   - [x] light/dark mode
   - [x] rounded borders
-  - [ ] multiple themes
   - [x] minimal buttons
   - [x] channel switch
   - [x] bottom dock for quick info
@@ -15,8 +15,8 @@
   - [x] convert website into a PWA
   - [x] add a pwa logo
   - [ ] pdfs to pictures
-  - [ ] day to day switch
-- [ ] Mobile friendly
+  - [x] day to day switch
+- [x] Mobile friendly
 - [ ] Automatic build script
 
 ## Maybe

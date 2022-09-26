@@ -1,10 +1,7 @@
 <script lang="ts">
 	import type Class from '$lib/models/Class';
-	import { subscribe } from 'svelte/internal';
-	import { get } from 'svelte/store';
 	import ClassCard from './ClassCard.svelte';
 	import Dock from './Dock.svelte';
-	import Tooltip from './Tooltip.svelte';
 
 	export let timetable: Map<string, Class[]>,
 		hours: string[] = ['08:00', '09:00', '10:00', '11:00', '12:00'],
@@ -58,6 +55,7 @@
 							{#each timetable.get(day) || [] as _class}
 								{#if _class.from == hour}
 									<td
+										class="border-none"
 										rowspan={_class.duration}
 										style="background: var(--{_class.subject?.color}Dim);color: var(--{_class
 											.subject?.color}); "
