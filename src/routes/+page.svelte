@@ -79,35 +79,59 @@
 		channel2 = channel2;
 	});
 
-	let action = 'Oggi',
+	enum Menu {
+		Today = 'Today',
+		Tomorrow = 'Tomorrow',
+		Schedule = 'Schedule'
+	}
+
+	let action = Menu.Today,
 		actions = [
 			{
-				label: 'Oggi',
+				label: Menu.Today,
 				icon: 'today'
 			},
 			{
-				label: 'Domani',
+				label: Menu.Tomorrow,
 				icon: 'early_on'
 			},
 			{
-				label: 'Calendario',
+				label: Menu.Schedule,
 				icon: 'calendar_view_week'
 			}
 		],
-		openDock = false;
+		openDock = false,
+		channel: number;
 </script>
 
-<App>
-	{#if action == 'Oggi'}
+<App bind:channel>
+	{#if action == Menu.Today}
 		<span on:click={() => (openDock = !openDock)}>Coming soon...</span>
-	{:else if action == 'Domani'}
+	{:else if action == Menu.Tomorrow}
 		<span on:click={() => (openDock = !openDock)}>Coming soon...</span>
 	{:else}
-		<Timetable timetable={channel1} />
+		<Timetable
+			timetable={channel == 1 ? channel1 : channel2}
+			hours={channel == 2
+				? [
+						'08:00',
+						'09:00',
+						'10:00',
+						'11:00',
+						'12:00',
+						'13:00',
+						'14:00',
+						'15:00',
+						'16:00',
+						'17:00',
+						'18:00'
+				  ]
+				: ['08:00', '09:00', '10:00', '11:00', '12:00']}
+		/>
 	{/if}
 	<div slot="actions" class="flex items-center justify-evenly gap-4">
 		{#each actions as { label, icon }}
-			<Button {label} selected={label == action} onclick={() => (action = label)}>
+			<Button label={`${label}`} selected={label == action} onclick={() => (action = label)}>
 				<span class="material-symbols-{action == label ? 'filled' : 'outlined'} text-xl">
 					{icon}
 				</span>

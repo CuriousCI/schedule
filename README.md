@@ -4,11 +4,11 @@
 
 - [ ] Better UI/UX
   - [x] light/dark mode
-  - [ ] rounded borders
+  - [x] rounded borders
   - [ ] multiple themes
   - [x] minimal buttons
-  - [ ] channel switch
-  - [ ] bottom dock for quick info
+  - [x] channel switch
+  - [x] bottom dock for quick info
     - [x] mobile bottom dock
   - [ ] quick map button
 - [ ] Functionality

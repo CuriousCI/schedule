@@ -22,7 +22,7 @@
 	on:click={toggleTheme}
 	aria-label="Dark mode"
 	type="button"
-	class="duration-300 outline-none rounded-lg text-sm p-2.5 z-50"
+	class="duration-300 outline-none rounded-lg text-sm p-2.5"
 >
 	{#if dark}
 		<svg
