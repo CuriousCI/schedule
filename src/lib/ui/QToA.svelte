@@ -1,6 +1,7 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 135.28 58.615"
+	class="h-10"
 	fill-rule="evenodd"
 	fill="currentColor"
 	><path

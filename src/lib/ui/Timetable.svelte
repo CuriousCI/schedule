@@ -44,18 +44,18 @@
 				<th>T</th>
 				<th>F</th>
 			</tr>
+			<br />
 		</thead>
 		<tbody>
 			{#each hours as hour}
 				<tr>
 					<!-- <td>{hour} - {offsetTime(hour, 1)}</td> -->
-					<td>{hour}</td>
+					<td class="font-bold">{hour.slice(0, 2)}</td>
 					{#each days as day}
 						{#if grid.get(`${hour}${day}`)}
 							{#each timetable.get(day) || [] as _class}
 								{#if _class.from == hour}
 									<td
-										class="border-none"
 										rowspan={_class.duration}
 										style="background: var(--{_class.subject?.color}Dim);color: var(--{_class
 											.subject?.color}); "

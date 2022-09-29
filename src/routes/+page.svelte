@@ -132,8 +132,22 @@
 			timetable={channel == 1 ? channel1 : channel2}
 		/>
 	{:else if action == Menu.Tools}
-		<div class="w-screen">
-			<QToA />
+		<div class="h-[80%] w-[80%]">
+			<a
+				href="https://q2a.di.uniroma1.it/fondamenti-di-programmazione-22-23?course=fondamenti-di-programmazione-22-23"
+				target="_blank"
+				class="w-full border-2 rounded-[50px] grid place-items-center p-5"
+			>
+				<QToA />
+			</a>
+			<br />
+			<a
+				href="https://sites.google.com/uniroma1.it/mmi2223/home"
+				target="_blank"
+				class="w-full text-2xl border-2 rounded-[50px] grid place-items-center p-5"
+			>
+				Metodi Matematici
+			</a>
 		</div>
 	{:else}
 		<Timetable
