@@ -9,9 +9,8 @@
 	import Timetable from '$lib/ui/Timetable.svelte';
 	import { onMount } from 'svelte';
 	import Button from '$lib/ui/Button.svelte';
-	import { now, select_option } from 'svelte/internal';
-	import Dock from '$lib/ui/Dock.svelte';
 	import Day from '$lib/ui/Day.svelte';
+	import QToA from '$lib/ui/QToA.svelte';
 
 	let teachers: Map<string, Teacher>,
 		buildings: Map<string, Building>,
@@ -83,7 +82,8 @@
 	enum Menu {
 		Today = 'Today',
 		Tomorrow = 'Tomorrow',
-		Schedule = 'Schedule'
+		Schedule = 'Schedule',
+		Tools = 'Tools'
 	}
 
 	let action = Menu.Today,
@@ -99,6 +99,10 @@
 			{
 				label: Menu.Schedule,
 				icon: 'calendar_view_week'
+			},
+			{
+				label: Menu.Tools,
+				icon: 'build'
 			}
 		],
 		openDock = false,
@@ -127,6 +131,10 @@
 				.toLowerCase()}
 			timetable={channel == 1 ? channel1 : channel2}
 		/>
+	{:else if action == Menu.Tools}
+		<div class="w-screen">
+			<QToA />
+		</div>
 	{:else}
 		<Timetable
 			timetable={channel == 1 ? channel1 : channel2}

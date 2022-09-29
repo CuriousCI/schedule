@@ -14,8 +14,8 @@
 		style="height: {fullPage ? '100%' : '50%'};"
 		class="w-full rounded-t-[50px] absolute bottom-0 left-0 grid place-items-center bg-bg dark:bg-dbg text-fg dark:text-dfg duration-300"
 	>
-		<span
-			class="material-symbols-filled absolute left-1/2 top-[35px] text-3xl cursor-pointer"
+		<button
+			class="material-symbols-filled absolute left-1/2 top-[35px] text-3xl"
 			on:click={() => (fullPage = !fullPage)}
 		>
 			{#if fullPage}
@@ -23,13 +23,13 @@
 			{:else}
 				expand_less
 			{/if}
-		</span>
-		<span
-			class="material-symbols-filled text-xl absolute top-[35px] right-[35px] cursor-pointer"
+		</button>
+		<button
+			class="material-symbols-filled text-xl absolute top-[35px] right-[35px]"
 			on:click={() => (open = false)}
 		>
 			close
-		</span>
+		</button>
 		<div class="w-full max-h-[calc(100%-96px)] box-border absolute top-24 pl-5 overflow-y-scroll">
 			<slot />
 		</div>

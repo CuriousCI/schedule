@@ -12,6 +12,7 @@
     - [x] mobile bottom dock
   - [ ] quick map button
 - [ ] Functionality
+  - [ ] fill subject in form too if possible!
   - [x] convert website into a PWA
   - [x] add a pwa logo
   - [ ] pdfs to pictures
