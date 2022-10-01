@@ -33,7 +33,7 @@
 </div>
 
 <Dock bind:open={openDock}>
-	<div class="w-full flex items-center justify-evenly p-5">
+	<div class="w-full flex items-center justify-center gap-5 p-5">
 		<!-- <label for="lesson">Lesson</label> -->
 		<input type="number" min="1" name="lesson" bind:value={lesson} />
 		<a

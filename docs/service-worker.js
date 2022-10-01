@@ -1,17 +1,17 @@
 const i = [
-  "/schedule/_app/immutable/start-9087cd77.js",
+  "/schedule/_app/immutable/start-44183fcd.js",
   "/schedule/_app/immutable/components/layout.svelte-804c9493.js",
-  "/schedule/_app/immutable/components/error.svelte-11281eac.js",
-  "/schedule/_app/immutable/components/pages/_page.svelte-d4c018c3.js",
-  "/schedule/_app/immutable/assets/_page-597ffe3b.css",
+  "/schedule/_app/immutable/components/error.svelte-c8bc0ce2.js",
+  "/schedule/_app/immutable/components/pages/_page.svelte-08ee81ef.js",
+  "/schedule/_app/immutable/assets/_page-871f4b72.css",
   "/schedule/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js",
-  "/schedule/_app/immutable/chunks/singletons-3047edf4.js",
+  "/schedule/_app/immutable/chunks/singletons-3b5daf22.js",
   "/schedule/_app/immutable/chunks/index-be866362.js",
   "/schedule/_app/immutable/chunks/_layout-8d2a742b.js",
   "/schedule/_app/immutable/chunks/0-4cc38363.js",
-  "/schedule/_app/immutable/chunks/1-d17b5f5b.js",
-  "/schedule/_app/immutable/chunks/2-de93ea7d.js"
-], d = [
+  "/schedule/_app/immutable/chunks/1-e417754e.js",
+  "/schedule/_app/immutable/chunks/2-68d927a4.js"
+], p = [
   "/schedule/.nojekyll",
   "/schedule/buildings.json",
   "/schedule/channel1.json",
@@ -23,7 +23,7 @@ const i = [
   "/schedule/subjects.json",
   "/schedule/teachers.json",
   "/schedule/wooclap.svg"
-], l = "1664608083833", t = self, o = `cache${l}`, h = i.concat(d), p = new Set(h);
+], l = "1664608233172", t = self, o = `cache${l}`, h = i.concat(p), d = new Set(h);
 t.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(o).then((s) => s.addAll(h)).then(() => {
@@ -55,7 +55,7 @@ async function r(e) {
 t.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const s = new URL(e.request.url), c = s.protocol.startsWith("http"), a = s.hostname === self.location.hostname && s.port !== self.location.port, n = s.host === self.location.host && p.has(s.pathname), u = e.request.cache === "only-if-cached" && !n;
+  const s = new URL(e.request.url), c = s.protocol.startsWith("http"), a = s.hostname === self.location.hostname && s.port !== self.location.port, n = s.host === self.location.host && d.has(s.pathname), u = e.request.cache === "only-if-cached" && !n;
   c && !a && !u && e.respondWith(
     (async () => n && await caches.match(e.request) || r(e.request))()
   );
