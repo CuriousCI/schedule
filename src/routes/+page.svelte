@@ -11,6 +11,8 @@
 	import Button from '$lib/ui/Button.svelte';
 	import Day from '$lib/ui/Day.svelte';
 	import QToA from '$lib/ui/QToA.svelte';
+	import Tools from '$lib/pages/Tools.svelte';
+	import ThemeSwitch from '$lib/ui/ThemeSwitch.svelte';
 
 	let teachers: Map<string, Teacher>,
 		buildings: Map<string, Building>,
@@ -108,11 +110,30 @@
 		openDock = false,
 		channel: number;
 
+	onMount(() => {
+		channel = parseInt(localStorage.getItem('channel') || '1');
+	});
+
 	let tomorrow = new Date(Date.now());
 	tomorrow.setDate(tomorrow.getDate() + 1);
 </script>
 
-<App bind:channel>
+<App>
+	<span slot="appbar" class="flex items-center gap-4">
+		<button
+			class="overline"
+			on:click={() => {
+				channel = channel == 1 ? 2 : 1;
+				localStorage.setItem('channel', channel.toString());
+			}}
+		>
+			Channel
+			{#if channel}
+				<span class="font-bold">{channel}</span>
+			{/if}
+		</button>
+		<ThemeSwitch />
+	</span>
 	{#if action == Menu.Today}
 		<Day
 			day={new Date(Date.now())
@@ -132,23 +153,7 @@
 			timetable={channel == 1 ? channel1 : channel2}
 		/>
 	{:else if action == Menu.Tools}
-		<div class="h-[80%] w-[80%]">
-			<a
-				href="https://q2a.di.uniroma1.it/fondamenti-di-programmazione-22-23?course=fondamenti-di-programmazione-22-23"
-				target="_blank"
-				class="w-full border-2 rounded-[50px] grid place-items-center p-5"
-			>
-				<QToA />
-			</a>
-			<br />
-			<a
-				href="https://sites.google.com/uniroma1.it/mmi2223/home"
-				target="_blank"
-				class="w-full text-2xl border-2 rounded-[50px] grid place-items-center p-5"
-			>
-				Metodi Matematici
-			</a>
-		</div>
+		<Tools />
 	{:else}
 		<Timetable
 			timetable={channel == 1 ? channel1 : channel2}

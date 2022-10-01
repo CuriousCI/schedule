@@ -54,6 +54,14 @@ td {
   'opsz' 48
 }
 
+input {
+  background: var(--bg);
+  padding: 10px;
+  border: 1px solid var(--fg);
+  border-radius: 10px;
+  outline: none;
+}
+
 html {
     --bgH: #f9f5d7;
     --bg: #fbf1c7;
