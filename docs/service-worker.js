@@ -1,18 +1,19 @@
 const i = [
-  "/schedule/_app/immutable/start-44183fcd.js",
-  "/schedule/_app/immutable/components/layout.svelte-804c9493.js",
-  "/schedule/_app/immutable/components/error.svelte-c8bc0ce2.js",
-  "/schedule/_app/immutable/components/pages/_page.svelte-08ee81ef.js",
-  "/schedule/_app/immutable/assets/_page-871f4b72.css",
+  "/schedule/_app/immutable/start-82d59263.js",
+  "/schedule/_app/immutable/components/layout.svelte-e6095b23.js",
+  "/schedule/_app/immutable/components/error.svelte-776c4e8b.js",
+  "/schedule/_app/immutable/components/pages/_page.svelte-9c81958d.js",
+  "/schedule/_app/immutable/assets/_page-469ce2e3.css",
   "/schedule/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js",
-  "/schedule/_app/immutable/chunks/singletons-3b5daf22.js",
-  "/schedule/_app/immutable/chunks/index-be866362.js",
+  "/schedule/_app/immutable/chunks/singletons-89274faa.js",
+  "/schedule/_app/immutable/chunks/index-e339a38f.js",
   "/schedule/_app/immutable/chunks/_layout-8d2a742b.js",
-  "/schedule/_app/immutable/chunks/0-4cc38363.js",
-  "/schedule/_app/immutable/chunks/1-e417754e.js",
-  "/schedule/_app/immutable/chunks/2-68d927a4.js"
+  "/schedule/_app/immutable/chunks/0-1a6760b6.js",
+  "/schedule/_app/immutable/chunks/1-f48c64bc.js",
+  "/schedule/_app/immutable/chunks/2-cba5433f.js"
 ], p = [
   "/schedule/.nojekyll",
+  "/schedule/books.json",
   "/schedule/buildings.json",
   "/schedule/channel1.json",
   "/schedule/channel2.json",
@@ -23,10 +24,10 @@ const i = [
   "/schedule/subjects.json",
   "/schedule/teachers.json",
   "/schedule/wooclap.svg"
-], l = "1664608233172", t = self, o = `cache${l}`, h = i.concat(p), d = new Set(h);
+], o = "1667320021408", t = self, l = `cache${o}`, h = i.concat(p), d = new Set(h);
 t.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(o).then((s) => s.addAll(h)).then(() => {
+    caches.open(l).then((s) => s.addAll(h)).then(() => {
       t.skipWaiting();
     })
   );
@@ -35,13 +36,13 @@ t.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then(async (s) => {
       for (const c of s)
-        c !== o && await caches.delete(c);
+        c !== l && await caches.delete(c);
       t.clients.claim();
     })
   );
 });
 async function r(e) {
-  const s = await caches.open(`offline${l}`);
+  const s = await caches.open(`offline${o}`);
   try {
     const c = await fetch(e);
     return s.put(e, c.clone()), c;

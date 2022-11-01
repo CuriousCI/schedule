@@ -12,6 +12,7 @@
 		href="https://q2a.di.uniroma1.it/fondamenti-di-programmazione-22-23?course=fondamenti-di-programmazione-22-23"
 		target="_blank"
 		class="w-full border-2 rounded-[50px] grid place-items-center p-5"
+		rel="noreferrer"
 	>
 		<QToA />
 	</a>
@@ -27,6 +28,7 @@
 		href="https://sites.google.com/uniroma1.it/mmi2223/home"
 		target="_blank"
 		class="w-full text-2xl border-2 rounded-[50px] grid place-items-center p-5"
+		rel="noreferrer"
 	>
 		Metodi Matematici
 	</a>
@@ -40,6 +42,7 @@
 			href="https://app.wooclap.com/F22LEZ{lesson}"
 			target="_blank"
 			class="material-symbols-outlined bg-fg text-bg dark:bg-dfg dark:text-dbg p-4 rounded-full"
+			rel="noreferrer"
 		>
 			open_in_browser
 		</a>
