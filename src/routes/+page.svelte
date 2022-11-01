@@ -1,31 +1,25 @@
 <script lang="ts">
 	import '../app.css';
 
+	import { onMount } from 'svelte';
 	import type Teacher from '$lib/models/Teacher';
 	import type Building from '$lib/models/Building';
 	import type Subject from '$lib/models/Subject';
 	import type Class from '$lib/models/Class';
-	import type Book from '$lib/models/Book';
 	import App from '$lib/ui/App.svelte';
 	import Timetable from '$lib/ui/Timetable.svelte';
-	import { onMount } from 'svelte';
 	import Button from '$lib/ui/Button.svelte';
 	import Day from '$lib/ui/Day.svelte';
-	// import QToA from '$lib/ui/QToA.svelte';
-	import BookCard from '$lib/ui/BookCard.svelte';
 	import Tools from '$lib/pages/Tools.svelte';
 	import ThemeSwitch from '$lib/ui/ThemeSwitch.svelte';
 
-	let books: Book[],
-		teachers: Map<string, Teacher>,
+	let teachers: Map<string, Teacher>,
 		buildings: Map<string, Building>,
 		subjects: Map<string, Subject>,
 		channel1: Map<string, Class[]> = new Map(),
 		channel2: Map<string, Class[]> = new Map();
 
 	onMount(async () => {
-		books = await (await fetch('books.json')).json();
-
 		teachers = new Map(
 			(await (await fetch('teachers.json')).json()).map((teacher: Teacher) => [teacher.id, teacher])
 		);
@@ -90,8 +84,7 @@
 		Today = 'Today',
 		Tomorrow = 'Tomorrow',
 		Schedule = 'Schedule',
-		Tools = 'Tools',
-		Books = 'Books'
+		Tools = 'Tools'
 	}
 
 	let action = Menu.Today,
@@ -99,10 +92,8 @@
 			{ label: Menu.Today, icon: 'today' },
 			{ label: Menu.Tomorrow, icon: 'early_on' },
 			{ label: Menu.Schedule, icon: 'calendar_view_week' },
-			{ label: Menu.Tools, icon: 'build' },
-			{ label: Menu.Books, icon: 'menu_book' }
+			{ label: Menu.Tools, icon: 'build' }
 		],
-		openDock = false,
 		channel: number;
 
 	onMount(() => {
@@ -149,13 +140,6 @@
 		/>
 	{:else if action == Menu.Tools}
 		<Tools />
-	{:else if action == Menu.Books}
-		<div class="h-[80%] w-[80%]">
-			{#each books as book}
-				<BookCard {book} />
-				<br />
-			{/each}
-		</div>
 	{:else}
 		<Timetable
 			timetable={channel == 1 ? channel1 : channel2}

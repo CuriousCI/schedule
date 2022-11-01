@@ -19,7 +19,9 @@
 
 {#if book}
 	<a href={book.url} target="_blank" rel="noreferrer">
-		<div class="w-full border-2 rounded-[50px] grid place-items-center p-5">
+		<div
+			class="w-full border-2 rounded-[50px] grid place-items-center p-5 text-center text-green dark:text-dgreen"
+		>
 			<span class="font-bold">{book.name}</span>
 			{#if end_page}
 				<span class="text-xl">{start_page} - {end_page}</span>
@@ -29,10 +31,3 @@
 		</div>
 	</a>
 {/if}
-
-<!-- <a -->
-<!-- 	href="https://q2a.di.uniroma1.it/fondamenti-di-programmazione-22-23?course=fondamenti-di-programmazione-22-23" -->
-<!-- 	target="_blank" -->
-<!-- > -->
-<!-- 	<QToA /> -->
-<!-- </a> -->
