@@ -15,45 +15,44 @@
 	});
 </script>
 
-<div class="h-[90%] w-[90%] max-h-[90%] overflow-y-scroll">
+<div class="w-full h-full max-h-[95%] flex flex-col px-10 box-border gap-5 overflow-y-scroll">
+	<br />
 	<a
 		href="https://q2a.di.uniroma1.it/fondamenti-di-programmazione-22-23?course=fondamenti-di-programmazione-22-23"
 		target="_blank"
-		class="w-full border-2 rounded-[50px] grid place-items-center p-5"
+		class="w-full rounded-[50px] grid place-items-center"
 		rel="noreferrer"
 	>
 		<QToA />
 	</a>
-	<br />
 	<button
-		class="w-full text-2xl border-2 rounded-[50px] grid place-items-center p-5"
+		class="w-full text-2xl rounded-[50px] grid place-items-center"
 		on:click={() => (openDock = !openDock)}
 	>
 		<Wooclap />
 	</button>
-	<br />
+	<hr />
 	<a
 		href="https://sites.google.com/uniroma1.it/mmi2223/home"
 		target="_blank"
-		class="w-full text-2xl border-2 rounded-[50px] grid place-items-center p-5"
+		class="w-full text-2xl rounded-[50px] grid place-items-center"
 		rel="noreferrer"
 	>
 		Metodi Matematici
 	</a>
-	<br />
 	<a
 		href="https://www1.mat.uniroma1.it/people/birindelli/esercizi/indice.html"
 		target="_blank"
-		class="w-full text-2xl border-2 rounded-[50px] grid place-items-center p-5"
+		class="w-full text-2xl rounded-[50px] grid place-items-center"
 		rel="noreferrer"
 	>
 		Calcolo Differenziale
 	</a>
-	<br />
+	<hr />
 	{#each books as book}
 		<BookCard {book} />
-		<br />
 	{/each}
+	<hr />
 </div>
 
 <Dock bind:open={openDock}>

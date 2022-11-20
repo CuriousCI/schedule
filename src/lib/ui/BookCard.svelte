@@ -18,16 +18,14 @@
 </script>
 
 {#if book}
-	<a href={book.url} target="_blank" rel="noreferrer">
-		<div
-			class="w-full border-2 rounded-[50px] grid place-items-center p-5 text-center text-green dark:text-dgreen"
-		>
-			<span class="font-bold">{book.name}</span>
-			{#if end_page}
-				<span class="text-xl">{start_page} - {end_page}</span>
-			{:else}
-				You still don't have to start!
-			{/if}
-		</div>
-	</a>
+	<!-- <a href={book.url} target="_blank" rel="noreferrer"> -->
+	<div class="rounded-[50px] text-center text-green dark:text-dgreen">
+		<span class="font-bold">{book.name}</span>
+		{#if end_page}
+			<span class="text-xl">{start_page} - {end_page}</span>
+		{:else}
+			You still don't have to start!
+		{/if}
+	</div>
+	<!-- </a> -->
 {/if}

@@ -1,4 +1,4 @@
-<main class="w-full h-full max-h-full grid bg-bg text-fg dark:bg-dbg dark:text-dfg ">
+<main class="w-full h-full max-h-full h-min grid bg-bg text-fg dark:bg-dbg dark:text-dfg ">
 	<div class="flex items-center px-5 text-lg justify-between">
 		<span class="font-bold">Uni Schedule</span>
 		<slot name="appbar" />
