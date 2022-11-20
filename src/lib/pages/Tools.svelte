@@ -17,6 +17,7 @@
 
 <div class="w-full h-full max-h-[95%] flex flex-col px-10 box-border gap-5 overflow-y-scroll">
 	<br />
+	<hr />
 	<a
 		href="https://q2a.di.uniroma1.it/fondamenti-di-programmazione-22-23?course=fondamenti-di-programmazione-22-23"
 		target="_blank"

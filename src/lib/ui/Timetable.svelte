@@ -33,7 +33,7 @@
 	}
 </script>
 
-<table class="h-[80%] w-[80%] table-fixed">
+<table class="w-full h-full table-fixed">
 	{#if timetable}
 		<thead>
 			<tr>

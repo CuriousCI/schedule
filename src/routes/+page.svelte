@@ -141,24 +141,26 @@
 	{:else if action == Menu.Tools}
 		<Tools />
 	{:else}
-		<Timetable
-			timetable={channel == 1 ? channel1 : channel2}
-			hours={channel == 2
-				? [
-						'08:00',
-						'09:00',
-						'10:00',
-						'11:00',
-						'12:00',
-						'13:00',
-						'14:00',
-						'15:00',
-						'16:00',
-						'17:00',
-						'18:00'
-				  ]
-				: ['08:00', '09:00', '10:00', '11:00', '12:00']}
-		/>
+		<div class="flex flex-col justify-start h-[50%] w-[80%]">
+			<Timetable
+				timetable={channel == 1 ? channel1 : channel2}
+				hours={channel == 2
+					? [
+							'08:00',
+							'09:00',
+							'10:00',
+							'11:00',
+							'12:00',
+							'13:00',
+							'14:00',
+							'15:00',
+							'16:00',
+							'17:00',
+							'18:00'
+					  ]
+					: ['08:00', '09:00', '10:00', '11:00', '12:00']}
+			/>
+		</div>
 	{/if}
 	<div slot="actions" class="flex items-center justify-evenly gap-4">
 		{#each actions as { label, icon }}

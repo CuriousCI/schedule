@@ -1,16 +1,16 @@
 const i = [
-  "/schedule/_app/immutable/start-7fbbb677.js",
+  "/schedule/_app/immutable/start-ecf604db.js",
   "/schedule/_app/immutable/components/layout.svelte-e6095b23.js",
-  "/schedule/_app/immutable/components/error.svelte-f8f0dae9.js",
-  "/schedule/_app/immutable/components/pages/_page.svelte-9e9dad57.js",
-  "/schedule/_app/immutable/assets/_page-e72e157b.css",
+  "/schedule/_app/immutable/components/error.svelte-fe9e378b.js",
+  "/schedule/_app/immutable/components/pages/_page.svelte-25c27a6d.js",
+  "/schedule/_app/immutable/assets/_page-aa8b9161.css",
   "/schedule/_app/immutable/modules/pages/_layout.js-7b9cbfbc.js",
-  "/schedule/_app/immutable/chunks/singletons-ba6b0975.js",
+  "/schedule/_app/immutable/chunks/singletons-98585963.js",
   "/schedule/_app/immutable/chunks/index-e339a38f.js",
   "/schedule/_app/immutable/chunks/_layout-8d2a742b.js",
   "/schedule/_app/immutable/chunks/0-1a6760b6.js",
-  "/schedule/_app/immutable/chunks/1-c001092b.js",
-  "/schedule/_app/immutable/chunks/2-aa7bcb5b.js"
+  "/schedule/_app/immutable/chunks/1-fa1c706b.js",
+  "/schedule/_app/immutable/chunks/2-d6e25a93.js"
 ], d = [
   "/schedule/.nojekyll",
   "/schedule/books.json",
@@ -24,7 +24,7 @@ const i = [
   "/schedule/subjects.json",
   "/schedule/teachers.json",
   "/schedule/wooclap.svg"
-], o = "1668974302486", c = self, l = `cache${o}`, h = i.concat(d), p = new Set(h);
+], o = "1668974963502", c = self, l = `cache${o}`, h = i.concat(d), p = new Set(h);
 c.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(l).then((s) => s.addAll(h)).then(() => {
