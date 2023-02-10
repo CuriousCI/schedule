@@ -38,27 +38,30 @@
 		<thead>
 			<tr>
 				<th />
-				<th>M</th>
-				<th>T</th>
-				<th>W</th>
-				<th>T</th>
-				<th>F</th>
+				<th class="font-bold bg-bg1 dark:bg-dbg1">M</th>
+				<th class="font-bold bg-bg1 dark:bg-dbg1">T</th>
+				<th class="font-bold bg-bg1 dark:bg-dbg1">W</th>
+				<th class="font-bold bg-bg1 dark:bg-dbg1">T</th>
+				<th class="font-bold bg-bg1 dark:bg-dbg1">F</th>
 			</tr>
 			<br />
 		</thead>
 		<tbody>
 			{#each hours as hour}
 				<tr>
-					<!-- <td>{hour} - {offsetTime(hour, 1)}</td> -->
-					<td class="font-bold">{hour.slice(0, 2)}</td>
+					<td class="font-bold bg-bg1 dark:bg-dbg1 align-top pt-4">{hour.slice(0, 2)}</td>
 					{#each days as day}
 						{#if grid.get(`${hour}${day}`)}
 							{#each timetable.get(day) || [] as _class}
 								{#if _class.from == hour}
 									<td
+										class="shadow-2xl dark:shadow-black "
+										on:keyup={() => {}}
+										style="
+                                            background: var(--{_class.subject?.color}Dim);
+                                            color: var(--{_class.subject?.color}); 
+                                        "
 										rowspan={_class.duration}
-										style="background: var(--{_class.subject?.color}Dim);color: var(--{_class
-											.subject?.color}); "
 										on:click={() => {
 											openDock = true;
 											selectedClass = _class;

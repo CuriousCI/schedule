@@ -34,9 +34,13 @@ body {
     overflow: hidden;
 }
 
-td {
-  border-radius: 20px;
+hr {
+    border: 1px solid;
 }
+
+/* td { */
+/*   border-radius: 20px; */
+/* } */
 
 table,
 th, 

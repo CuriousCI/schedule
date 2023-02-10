@@ -10,7 +10,6 @@
 	import Timetable from '$lib/ui/Timetable.svelte';
 	import Button from '$lib/ui/Button.svelte';
 	import Day from '$lib/ui/Day.svelte';
-	import Tools from '$lib/pages/Tools.svelte';
 	import ThemeSwitch from '$lib/ui/ThemeSwitch.svelte';
 
 	let teachers: Map<string, Teacher>,
@@ -81,16 +80,14 @@
 	});
 
 	enum Menu {
-		Today = 'Today',
-		Tomorrow = 'Tomorrow',
+		Upcoming = 'Upcoming',
 		Schedule = 'Schedule',
 		Tools = 'Tools'
 	}
 
-	let action = Menu.Today,
+	let action = Menu.Upcoming,
 		actions = [
-			{ label: Menu.Today, icon: 'today' },
-			{ label: Menu.Tomorrow, icon: 'early_on' },
+			{ label: Menu.Upcoming, icon: 'today' },
 			{ label: Menu.Schedule, icon: 'calendar_view_week' },
 			{ label: Menu.Tools, icon: 'build' }
 		],
@@ -120,47 +117,46 @@
 		</button>
 		<ThemeSwitch />
 	</span>
-	{#if action == Menu.Today}
+	{#if action == Menu.Upcoming}
+		<h1 class="text-4xl font-bold w-full">Today</h1>
 		<Day
-			day={new Date(Date.now())
-				.toLocaleDateString('en-US', {
-					weekday: 'long'
-				})
-				.toLowerCase()}
+			day={new Date(Date.now()).toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase()}
 			timetable={channel == 1 ? channel1 : channel2}
 		/>
-	{:else if action == Menu.Tomorrow}
+		<hr class="w-full border-bg2 dark:border-dbg2" />
+		<h1 class="text-4xl font-bold text-shadow dark w-full">Tomorrow</h1>
 		<Day
-			day={tomorrow
-				.toLocaleDateString('en-US', {
-					weekday: 'long'
-				})
-				.toLowerCase()}
+			day={tomorrow.toLocaleDateString('en-US', { weekday: 'long' }).toLowerCase()}
 			timetable={channel == 1 ? channel1 : channel2}
 		/>
 	{:else if action == Menu.Tools}
-		<Tools />
-	{:else}
-		<div class="flex flex-col justify-start h-[50%] w-[80%]">
-			<Timetable
-				timetable={channel == 1 ? channel1 : channel2}
-				hours={channel == 2
-					? [
-							'08:00',
-							'09:00',
-							'10:00',
-							'11:00',
-							'12:00',
-							'13:00',
-							'14:00',
-							'15:00',
-							'16:00',
-							'17:00',
-							'18:00'
-					  ]
-					: ['08:00', '09:00', '10:00', '11:00', '12:00']}
-			/>
+		<h1 class="text-4xl font-bold w-full">Links</h1>
+		<a
+			href="https://github.com/orgs/sapienzastudentsnetwork/repositories"
+			target="_blank"
+			rel="noreferrer"
+			class="w-full text-xl font-bold p-2 rounded-2xl flex flex-col items-center justify-center bg-bg dark:bg-dbg shadow-lg dark:shadow-black"
+		>
+			Sapienza Students Network
+		</a>
+		<a
+			href="https://github.com/orgs/sapienzastudentsnetwork/repositories"
+			target="_blank"
+			rel="noreferrer"
+			class="w-full text-xl font-bold p-2 rounded-2xl flex flex-col items-center justify-center bg-bg dark:bg-dbg shadow-lg dark:shadow-black"
+		>
+			Sapienza Students Network 2
+		</a>
+		<div class="mb-2" />
+		<hr class="w-full border-bg2 dark:border-dbg2" />
+		<h1 class="text-4xl font-bold w-full">Info</h1>
+		<div
+			class="w-full text-xl font-bold p-2 rounded-2xl flex flex-col items-center justify-center bg-bg dark:bg-dbg shadow-lg dark:shadow-black"
+		>
+			Random ducking info
 		</div>
+	{:else}
+		<Timetable timetable={channel1} />
 	{/if}
 	<div slot="actions" class="flex items-center justify-evenly gap-4">
 		{#each actions as { label, icon }}
@@ -172,3 +168,21 @@
 		{/each}
 	</div>
 </App>
+
+<!-- timetable={channel == 1 ? channel1 : channel2} -->
+<!-- hours={channel == 2 -->
+<!-- 	? [ -->
+<!-- 			'08:00', -->
+<!-- 			'09:00', -->
+<!-- 			'10:00', -->
+<!-- 			'11:00', -->
+<!-- 			'12:00', -->
+<!-- 			'13:00', -->
+<!-- 			'14:00', -->
+<!-- 			'15:00', -->
+<!-- 			'16:00', -->
+<!-- 			'17:00', -->
+<!-- 			'18:00' -->
+<!-- 	  ] -->
+<!-- 	: ['08:00', '09:00', '10:00', '11:00', '12:00']} -->
+<!-- // import Tools from '$lib/pages/Tools.svelte'; -->

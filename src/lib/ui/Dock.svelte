@@ -7,12 +7,13 @@
 
 {#if open}
 	<div
-		class="w-full h-full absolute top-0 left-0 bg-bg1 dark:bg-dbg1 rounded-none opacity-60"
+		class="w-full h-full absolute z-40  top-0 left-0 bg-bg1 dark:bg-dbg1 rounded-none opacity-60"
 		on:click={() => (open = false)}
+		on:keyup={() => {}}
 	/>
 	<div
 		style="height: {fullPage ? '100%' : '50%'};"
-		class="w-full rounded-t-[50px] absolute bottom-0 left-0 grid place-items-center bg-bg dark:bg-dbg text-fg dark:text-dfg duration-300"
+		class="w-full rounded-t-3xl absolute z-50 bottom-0 left-0 grid place-items-center bg-bg dark:bg-dbg text-fg dark:text-dfg duration-300"
 	>
 		<button
 			class="material-symbols-filled absolute left-1/2 top-[35px] text-3xl"

@@ -1,12 +1,14 @@
 <main class="w-full h-full max-h-full grid bg-bg text-fg dark:bg-dbg dark:text-dfg ">
-	<div class="flex items-center px-5 text-lg justify-between">
-		<span class="font-bold">Uni Schedule</span>
+	<header class="flex items-center px-5 text-lg justify-between shadow-xl dark:shadow-black z-10">
+		<span class="font-bold text-xl">Uni Schedule</span>
 		<slot name="appbar" />
-	</div>
-	<div class="grid place-items-center bg-bgH dark:bg-dbgH">
+	</header>
+	<div
+		class="overflow-y-auto flex flex-col items-center gap-4 py-8 px-6 bg-gradient-to-br from-bgH to-white dark:from-dbgH dark:to-dbg2"
+	>
 		<slot />
 	</div>
-	<div class="grid place-items-center">
+	<div id="actions" class="grid place-items-center">
 		<slot name="actions" />
 	</div>
 </main>
