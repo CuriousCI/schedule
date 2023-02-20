@@ -4,7 +4,7 @@
 		<slot name="appbar" />
 	</header>
 	<div
-		class="overflow-y-auto flex flex-col items-center gap-4 py-8 px-6 bg-gradient-to-br from-bgH to-white dark:from-dbgH dark:to-dbg2"
+		class="overflow-y-auto flex flex-col items-center gap-4 py-8 px-6 bg-gradient-to-br from-bgH to-white dark:from-dbgH dark:to-dbg1"
 	>
 		<slot />
 	</div>

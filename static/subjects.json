@@ -22,5 +22,29 @@
         "code": "1015880",
         "teaching": "Progettazione di sistemi digitali",
         "color": "yellow"
+    },
+    {
+        "id": "CI",
+        "code": "101226",
+        "teaching": "Calcolo integrale",
+        "color": "red"
+    },
+    {
+        "id": "MP",
+        "code": "1015883",
+        "teaching": "Metodologie di programmazione",
+        "color": "green"
+    },
+    {
+        "id": "AL",
+        "code": "1020420",
+        "teaching": "Introduzione agli algoritmi",
+        "color": "blue"
+    },
+    {
+        "id": "AR",
+        "code": "1015880",
+        "teaching": "Architetture degli elaboratori",
+        "color": "yellow"
     }
 ]
