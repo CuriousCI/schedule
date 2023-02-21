@@ -2,7 +2,7 @@
     "monday": [
         {
             "subject": "MP",
-            "teacher": "IB",
+            "teacher": "4C",
             "building": "CU032",
             "from": "08:00",
             "to": "11:00",
@@ -10,7 +10,7 @@
         },
         {
             "subject": "AL",
-            "teacher": "IB",
+            "teacher": "TC",
             "building": "CU032",
             "from": "11:00",
             "to": "13:00",
@@ -20,7 +20,7 @@
     "tuesday": [
         {
             "subject": "AR",
-            "teacher": "IB",
+            "teacher": "AC",
             "building": "CU032",
             "from": "08:00",
             "to": "11:00",
@@ -38,7 +38,7 @@
     "wednesday": [
         {
             "subject": "MP",
-            "teacher": "IB",
+            "teacher": "4C",
             "building": "RM025",
             "from": "12:00",
             "to": "16:00",
@@ -48,7 +48,7 @@
     "thursday": [
         {
             "subject": "AR",
-            "teacher": "IB",
+            "teacher": "AC",
             "building": "CU032",
             "from": "08:00",
             "to": "10:00",
@@ -56,7 +56,7 @@
         },
         {
             "subject": "AL",
-            "teacher": "IB",
+            "teacher": "TC",
             "building": "CU032",
             "from": "10:00",
             "to": "13:00",
@@ -74,7 +74,7 @@
         },
         {
             "subject": "MP",
-            "teacher": "IB",
+            "teacher": "4C",
             "building": "CU032",
             "from": "11:00",
             "to": "13:00",
