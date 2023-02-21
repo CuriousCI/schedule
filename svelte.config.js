@@ -9,7 +9,7 @@ const config = {
 
     kit: {
         paths: { base: '/schedule' },
-        adapter: adapter({ pages: 'docs', assets: 'docs', fallback: null })
+        adapter: adapter({ pages: 'docs', assets: 'docs' })
     }
 };
 
