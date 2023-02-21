@@ -71,5 +71,41 @@
         "email":"annalisa.massini@uniroma1.it",
         "profile": "https://corsidilaurea.uniroma1.it/it/users/annalisamassiniuniroma1it",
         "picture": "https://corsidilaurea.uniroma1.it/sites/default/files/styles/user_picture/public/pictures/picture-23542-1601624072.png?itok=j5vy7_85"
+    },
+    {
+        "id": "TC",
+        "name": "Tiziana",
+        "surname": "Calomeri",
+        "website": "",
+        "email":"tiziana.calomeri@uniroma1.it",
+        "profile": "",
+        "picture": ""
+    },
+    {
+        "id": "AC",
+        "name": "Alessandro",
+        "surname": "Checco",
+        "website": "",
+        "email":"alessandro.checco@uniroma1.it",
+        "profile": "",
+        "picture": ""
+    },
+    {
+        "id": "4C",
+        "name": "Walter",
+        "surname": "Quattrociocchi",
+        "website": "",
+        "email":"",
+        "profile": "",
+        "picture": ""
+    },
+    {
+        "id": "CI",
+        "name": "Quello",
+        "surname": "Di Calcolo Integrale",
+        "website": "",
+        "email":"",
+        "profile": "",
+        "picture": ""
     }
 ]

@@ -33,39 +33,39 @@
 		<Wooclap />
 	</button>
 	<hr />
-	<a
-		href="https://sites.google.com/uniroma1.it/mmi2223/home"
-		target="_blank"
-		class="w-full text-2xl rounded-[50px] grid place-items-center"
-		rel="noreferrer"
-	>
-		Metodi Matematici
-	</a>
-	<a
-		href="https://www1.mat.uniroma1.it/people/birindelli/esercizi/indice.html"
-		target="_blank"
-		class="w-full text-2xl rounded-[50px] grid place-items-center"
-		rel="noreferrer"
-	>
-		Calcolo Differenziale
-	</a>
+	<!-- <a -->
+	<!-- 	href="https://sites.google.com/uniroma1.it/mmi2223/home" -->
+	<!-- 	target="_blank" -->
+	<!-- 	class="w-full text-2xl rounded-[50px] grid place-items-center" -->
+	<!-- 	rel="noreferrer" -->
+	<!-- > -->
+	<!-- 	Metodi Matematici -->
+	<!-- </a> -->
+	<!-- <a -->
+	<!-- 	href="https://www1.mat.uniroma1.it/people/birindelli/esercizi/indice.html" -->
+	<!-- 	target="_blank" -->
+	<!-- 	class="w-full text-2xl rounded-[50px] grid place-items-center" -->
+	<!-- 	rel="noreferrer" -->
+	<!-- > -->
+	<!-- 	Calcolo Differenziale -->
+	<!-- </a> -->
 	<hr />
-	{#each books as book}
-		<BookCard {book} />
-	{/each}
-	<hr />
+	<!-- {#each books as book} -->
+	<!-- 	<BookCard {book} /> -->
+	<!-- {/each} -->
+	<!-- <hr /> -->
 </div>
 
-<Dock bind:open={openDock}>
-	<div class="w-full flex items-center justify-center gap-5 p-5">
-		<input type="number" min="1" name="lesson" bind:value={lesson} />
-		<a
-			href="https://app.wooclap.com/F22LEZ{lesson}"
-			target="_blank"
-			class="material-symbols-outlined bg-fg text-bg dark:bg-dfg dark:text-dbg p-4 rounded-full"
-			rel="noreferrer"
-		>
-			open_in_browser
-		</a>
-	</div>
-</Dock>
+<!-- <Dock bind:open={openDock}> -->
+<!-- 	<div class="w-full flex items-center justify-center gap-5 p-5"> -->
+<!-- 		<input type="number" min="1" name="lesson" bind:value={lesson} /> -->
+<!-- 		<a -->
+<!-- 			href="https://app.wooclap.com/F22LEZ{lesson}" -->
+<!-- 			target="_blank" -->
+<!-- 			class="material-symbols-outlined bg-fg text-bg dark:bg-dfg dark:text-dbg p-4 rounded-full" -->
+<!-- 			rel="noreferrer" -->
+<!-- 		> -->
+<!-- 			open_in_browser -->
+<!-- 		</a> -->
+<!-- 	</div> -->
+<!-- </Dock> -->

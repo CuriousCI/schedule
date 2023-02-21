@@ -15,7 +15,22 @@
 	let teachers: Map<string, Teacher>,
 		buildings: Map<string, Building>,
 		subjects: Map<string, Subject>,
-		timetable: Map<string, Class[]> = new Map();
+		timetable: Map<string, Class[]> = new Map(),
+		links = [
+			{
+				name: 'Students Network',
+				url: 'https://github.com/orgs/sapienzastudentsnetwork/repositories'
+			},
+			{ name: 'Architettura', url: 'https://classroom.google.com/u/1/c/NTYyODM4NDA2NDcy' },
+			{
+				name: 'Gruppo Arch',
+				url: 'https://groups.google.com/u/1/a/uniroma1.it/g/architettura-degli-elaboratori-2022-23-a-l'
+			},
+			{ name: 'Calcolo Integrale', url: 'https://bit.ly/CI202223' },
+			{ name: 'Quiz Calcolo', url: 'https://bit.ly/CI2223uno' },
+			{ name: 'Algoritmi', url: 'https://twiki.di.uniroma1.it/twiki/view/Intro_algo/AD/WebHome' },
+			{ name: 'Java', url: 'https://classroom.google.com/u/1/c/NTkzNzA4NTg3MDU5' }
+		];
 
 	onMount(async () => {
 		teachers = new Map(
@@ -93,22 +108,16 @@
 		/>
 	{:else if action == Menu.Tools}
 		<h1 class="text-4xl font-bold w-full">Links</h1>
-		<a
-			href="https://github.com/orgs/sapienzastudentsnetwork/repositories"
-			target="_blank"
-			rel="noreferrer"
-			class="w-full text-xl font-bold p-2 rounded-2xl flex flex-col items-center justify-center bg-bg dark:bg-dbg shadow-lg dark:shadow-black"
-		>
-			Sapienza Students Network
-		</a>
-		<a
-			href="https://github.com/orgs/sapienzastudentsnetwork/repositories"
-			target="_blank"
-			rel="noreferrer"
-			class="w-full text-xl font-bold p-2 rounded-2xl flex flex-col items-center justify-center bg-bg dark:bg-dbg shadow-lg dark:shadow-black"
-		>
-			Sapienza Students Network 2
-		</a>
+		{#each links as { name, url }}
+			<a
+				href={url}
+				target="_blank"
+				rel="noreferrer"
+				class="w-full text-xl font-bold px-4 py-2 rounded-2xl flex flex-col items-start justify-center bg-bg dark:bg-dbg shadow-lg dark:shadow-black"
+			>
+				{name}
+			</a>
+		{/each}
 		<div class="mb-2" />
 		<hr class="w-full border-bg2 dark:border-dbg2" />
 		<h1 class="text-4xl font-bold w-full">Info</h1>
