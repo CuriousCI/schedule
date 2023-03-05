@@ -1,17 +1,17 @@
 const i = [
-  "/schedule/_app/immutable/entry/app.d57370c2.mjs",
-  "/schedule/_app/immutable/chunks/0.6947344b.mjs",
-  "/schedule/_app/immutable/chunks/1.7f43dab1.mjs",
-  "/schedule/_app/immutable/chunks/2.f10ddcab.mjs",
+  "/schedule/_app/immutable/entry/app.f079880e.mjs",
+  "/schedule/_app/immutable/chunks/0.ce9a4685.mjs",
+  "/schedule/_app/immutable/chunks/1.2264b19f.mjs",
+  "/schedule/_app/immutable/chunks/2.8745af04.mjs",
   "/schedule/_app/immutable/chunks/_layout.68ca539e.mjs",
-  "/schedule/_app/immutable/chunks/index.be0875a3.mjs",
-  "/schedule/_app/immutable/chunks/singletons.0841f869.mjs",
-  "/schedule/_app/immutable/entry/start.94c467a6.mjs",
-  "/schedule/_app/immutable/entry/error.svelte.ad25982b.mjs",
-  "/schedule/_app/immutable/entry/layout.svelte.32170c78.mjs",
+  "/schedule/_app/immutable/chunks/index.53017cc7.mjs",
+  "/schedule/_app/immutable/chunks/singletons.08cc3efc.mjs",
+  "/schedule/_app/immutable/entry/start.cba4943a.mjs",
+  "/schedule/_app/immutable/entry/error.svelte.1863e156.mjs",
+  "/schedule/_app/immutable/entry/layout.svelte.13727a65.mjs",
   "/schedule/_app/immutable/entry/_layout.ts.9f8e3aa7.mjs",
-  "/schedule/_app/immutable/assets/_page.99edb2df.css",
-  "/schedule/_app/immutable/entry/_page.svelte.c6bc729d.mjs"
+  "/schedule/_app/immutable/assets/_page.c4de25f7.css",
+  "/schedule/_app/immutable/entry/_page.svelte.063d7019.mjs"
 ], d = [
   "/schedule/.nojekyll",
   "/schedule/books.json",
@@ -19,6 +19,7 @@ const i = [
   "/schedule/channel1.json",
   "/schedule/channel12.json",
   "/schedule/channel2.json",
+  "/schedule/github.svg",
   "/schedule/logo_192.png",
   "/schedule/logo_512.png",
   "/schedule/logo_72.png",
@@ -26,10 +27,10 @@ const i = [
   "/schedule/subjects.json",
   "/schedule/teachers.json",
   "/schedule/wooclap.svg"
-], l = "1676984824545", c = self, o = `cache${l}`, h = i.concat(d), p = new Set(h);
+], l = "1678042021214", c = self, h = `cache${l}`, o = i.concat(d), p = new Set(o);
 c.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(o).then((s) => s.addAll(h)).then(() => {
+    caches.open(h).then((s) => s.addAll(o)).then(() => {
       c.skipWaiting();
     })
   );
@@ -38,7 +39,7 @@ c.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then(async (s) => {
       for (const t of s)
-        t !== o && await caches.delete(t);
+        t !== h && await caches.delete(t);
       c.clients.claim();
     })
   );

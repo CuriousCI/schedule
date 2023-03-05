@@ -55,17 +55,3 @@
 	<!-- {/each} -->
 	<!-- <hr /> -->
 </div>
-
-<!-- <Dock bind:open={openDock}> -->
-<!-- 	<div class="w-full flex items-center justify-center gap-5 p-5"> -->
-<!-- 		<input type="number" min="1" name="lesson" bind:value={lesson} /> -->
-<!-- 		<a -->
-<!-- 			href="https://app.wooclap.com/F22LEZ{lesson}" -->
-<!-- 			target="_blank" -->
-<!-- 			class="material-symbols-outlined bg-fg text-bg dark:bg-dfg dark:text-dbg p-4 rounded-full" -->
-<!-- 			rel="noreferrer" -->
-<!-- 		> -->
-<!-- 			open_in_browser -->
-<!-- 		</a> -->
-<!-- 	</div> -->
-<!-- </Dock> -->

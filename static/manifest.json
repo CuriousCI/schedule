@@ -1,6 +1,6 @@
 {
 	"short_name": "schedule",
-	"name": "Uni Schedule",
+	"name": "University",
 	"start_url" : "/schedule/",
 	"prefer_related_applications": false,
 	"related_applications": [],

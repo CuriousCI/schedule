@@ -1,6 +1,6 @@
 <main class="w-full h-full max-h-full grid bg-bg text-fg dark:bg-dbg dark:text-dfg ">
 	<header class="flex items-center px-5 text-lg justify-between shadow-xl dark:shadow-black z-10">
-		<span class="font-bold text-xl">Uni Schedule</span>
+		<span class="font-bold text-xl">CS @ Sapienza</span>
 		<slot name="appbar" />
 	</header>
 	<div
@@ -8,9 +8,7 @@
 	>
 		<slot />
 	</div>
-	<div id="actions" class="grid place-items-center">
-		<slot name="actions" />
-	</div>
+	<slot name="actions" />
 </main>
 
 <style>

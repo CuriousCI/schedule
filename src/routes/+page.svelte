@@ -18,18 +18,64 @@
 		timetable: Map<string, Class[]> = new Map(),
 		links = [
 			{
-				name: 'Students Network',
+				name: 'GitHub exercises',
+				icon: 'qr_code_scanner',
 				url: 'https://github.com/orgs/sapienzastudentsnetwork/repositories'
 			},
-			{ name: 'Architettura', url: 'https://classroom.google.com/u/1/c/NTYyODM4NDA2NDcy' },
 			{
-				name: 'Gruppo Arch',
+				name: 'Notes bot',
+				icon: 'document_scanner',
+				url: 'https://t.me/SSN_Notes_Bot'
+			},
+			{
+				name: 'Assembly google group',
+				icon: 'developer_board',
 				url: 'https://groups.google.com/u/1/a/uniroma1.it/g/architettura-degli-elaboratori-2022-23-a-l'
 			},
-			{ name: 'Calcolo Integrale', url: 'https://bit.ly/CI202223' },
-			{ name: 'Quiz Calcolo', url: 'https://bit.ly/CI2223uno' },
-			{ name: 'Algoritmi', url: 'https://twiki.di.uniroma1.it/twiki/view/Intro_algo/AD/WebHome' },
-			{ name: 'Java', url: 'https://classroom.google.com/u/1/c/NTkzNzA4NTg3MDU5' }
+			{
+				name: 'Asembly classroom',
+				icon: 'settings_input_antenna',
+				url: 'https://classroom.google.com/u/1/c/NTYyODM4NDA2NDcy'
+			},
+			{
+				name: 'Asembly slides',
+				icon: 'device_hub',
+				url: 'https://drive.google.com/drive/folders/1JU1D1xdahVb5hvRDG8aHQFZ73a6arFNo'
+			},
+
+			{ name: 'Calculus moodle', icon: 'function', url: 'https://bit.ly/CI202223' },
+			{
+				name: 'Algorithms forum',
+				icon: 'regular_expression',
+				url: 'https://twiki.di.uniroma1.it/twiki/view/Intro_algo/AD/WebHome'
+			},
+			{
+				name: 'Algorithms slides',
+				icon: 'terminal',
+				url: 'https://twiki.di.uniroma1.it/twiki/view/Intro_algo/AD/Dispense'
+			},
+			{
+				name: 'Java classroom',
+				icon: 'deployed_code',
+				url: 'https://classroom.google.com/u/1/c/NTkzNzA4NTg3MDU5'
+			}
+		],
+		books = [
+			{
+				name: 'Assembly MIPS',
+				icon: 'import_contacts',
+				url: 'file:///D:/university/books/Computer%20Organization%20and%20Design%20MIPS%20Edition.pdf'
+			},
+			{
+				name: 'Intro to algorithms',
+				icon: 'auto_stories',
+				url: 'file:///D:/university/books/Introduction%20To%20Algorithms.pdf'
+			},
+			{
+				name: 'The new Java',
+				icon: 'menu_book',
+				url: 'file:///D:/university/books/IlNuovoJava.pdf'
+			}
 		];
 
 	onMount(async () => {
@@ -108,30 +154,44 @@
 		/>
 	{:else if action == Menu.Tools}
 		<h1 class="text-4xl font-bold w-full">Links</h1>
-		{#each links as { name, url }}
-			<a
-				href={url}
-				target="_blank"
-				rel="noreferrer"
-				class="w-full text-xl font-bold px-4 py-2 rounded-2xl flex flex-col items-start justify-center bg-bg dark:bg-dbg shadow-lg dark:shadow-black"
-			>
+		{#each links as { name, icon, url }}
+			<a href={url} target="_blank" rel="noreferrer" class="w-full px-4 text-xl">
+				<span class="material-symbols-outlined align-text-bottom">{icon}</span>
 				{name}
 			</a>
 		{/each}
 		<div class="mb-2" />
 		<hr class="w-full border-bg2 dark:border-dbg2" />
 		<h1 class="text-4xl font-bold w-full">Info</h1>
-		<div
-			class="w-full text-xl font-bold p-2 rounded-2xl flex flex-col items-center justify-center bg-bg dark:bg-dbg shadow-lg dark:shadow-black"
-		>
-			Random ducking info
-		</div>
+		{#each books as { name, icon, url }}
+			<a href={url} target="_blank" rel="noreferrer" class="w-full px-4 text-xl">
+				<span class="material-symbols-outlined align-text-bottom">{icon}</span>
+				{name}
+			</a>
+		{/each}
 	{:else if action == Menu.Social}
-		GitHub, Share button
+		<h1 class="text-4xl font-bold text-shadow dark w-full">Share</h1>
+		<div class="flex gap-4 justify-start">
+			<a href="https://github.com/CuriousCI/schedule">
+				<img src="github.svg" alt="GitHub logo" class="w-10 ds" />
+			</a>
+			<button
+				class="material-symbols-outlined text-4xl"
+				on:click={() => {
+					navigator.share({
+						title: 'University',
+						text: 'Computer Science @ Sapienza',
+						url: 'curiousci.github.io/schedule'
+					});
+				}}
+			>
+				share
+			</button>
+		</div>
 	{:else}
 		<Timetable {timetable} />
 	{/if}
-	<div slot="actions" class="flex items-center justify-evenly">
+	<div slot="actions" class="px-5 flex items-center justify-evenly">
 		{#each actions as { label, icon }}
 			<Button label={`${label}`} selected={label == action} onclick={() => (action = label)}>
 				<span class="material-symbols-{action == label ? 'filled' : 'outlined'} text-xl">
