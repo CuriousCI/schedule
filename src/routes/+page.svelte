@@ -28,6 +28,11 @@
 				url: 'https://t.me/SSN_Notes_Bot'
 			},
 			{
+				name: "Exyss' notes",
+				icon: 'add_notes',
+				url: 'https://github.com/Exyss/university-notes'
+			},
+			{
 				name: 'Assembly google group',
 				icon: 'developer_board',
 				url: 'https://groups.google.com/u/1/a/uniroma1.it/g/architettura-degli-elaboratori-2022-23-a-l'
