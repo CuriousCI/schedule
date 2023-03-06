@@ -78,7 +78,26 @@
 			}
 		];
 
+	let hash: string | null = '';
+
 	onMount(async () => {
+		hash = window.location.hash;
+		if (!hash) {
+			hash = localStorage.getItem('action');
+		}
+		if (hash) {
+			if (hash == '#Upcoming') {
+				action = Menu.Upcoming;
+			} else if (hash == '#Schedule') {
+				action = Menu.Schedule;
+			} else if (hash == '#Tools') {
+				action = Menu.Tools;
+			} else if (hash == '#Social') {
+				action = Menu.Social;
+			}
+			window.location.hash = `#${action}`;
+		}
+
 		teachers = new Map(
 			(await (await fetch('teachers.json')).json()).map((teacher: Teacher) => [teacher.id, teacher])
 		);
@@ -180,8 +199,8 @@
 				on:click={() => {
 					navigator.share({
 						title: 'University',
-						text: 'Computer Science @ Sapienza',
-						url: 'curiousci.github.io/schedule'
+						text: '',
+						url: ''
 					});
 				}}
 			>
@@ -193,7 +212,15 @@
 	{/if}
 	<div slot="actions" class="px-5 flex items-center justify-evenly">
 		{#each actions as { label, icon }}
-			<Button label={`${label}`} selected={label == action} onclick={() => (action = label)}>
+			<Button
+				label={`${label}`}
+				selected={label == action}
+				onclick={() => {
+					action = label;
+					window.location.hash = `#${label}`;
+					localStorage.setItem('action', `#${label}`);
+				}}
+			>
 				<span class="material-symbols-{action == label ? 'filled' : 'outlined'} text-xl">
 					{icon}
 				</span>
