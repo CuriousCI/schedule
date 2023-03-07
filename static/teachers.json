@@ -1,5 +1,5 @@
-[
-    {
+{
+    "IB": {
         "id": "IB",
         "name": "Isabella",
         "surname": "Birindelli",
@@ -8,7 +8,7 @@
         "profile": "https://corsidilaurea.uniroma1.it/it/users/isabellabirindelliuniroma1it",
         "email": "isabella.birindelli@uniroma1.it"
     },
-    {
+    "AS": {
         "id": "AS",
         "name": "Andrea",
         "surname": "Sterbini",
@@ -18,7 +18,7 @@
         "profile": "https://corsidilaurea.uniroma1.it/it/users/andreasterbiniuniroma1it",
         "email": "andrea.sterbini@uniroma1.it"
     },
-    {
+    "LC": {
         "id": "LC",
         "name": "Lorenzo",
         "surname": "Carlucci",
@@ -27,7 +27,7 @@
         "website": "http://wwwusers.di.uniroma1.it/~carlucci/",
         "email":"lorenzo.carlucci@uniroma1.it"
     },
-    {
+    "SP": {
         "id": "SP",
         "name": "Salvatore",
         "surname": "Pontarelli",
@@ -36,7 +36,7 @@
         "picture": "https://corsidilaurea.uniroma1.it/sites/default/files/styles/user_picture/public/pictures/picture-36703-1602254316.jpg?itok=MFDZq-8o",
         "email": "salvatore.pontarelli@uniroma1.it"
     },
-    {
+    "M": {
         "id": "M",
         "name": "Luca Massimo Andrea",
         "surname": "Martinazzi",
@@ -44,7 +44,7 @@
         "profile": "https://corsidilaurea.uniroma1.it/it/users/lucamartinazziuniroma1it",
         "picture": "https://corsidilaurea.uniroma1.it/sites/default/files/styles/user_picture/public/pictures/picture-37888-1632406242.jpg?itok=NNyuDvp4"
     },
-    {
+    "IM": {
         "id": "IM",
         "name": "Iacopo",
         "surname": "Masi",
@@ -54,7 +54,7 @@
         "picture": "https://corsidilaurea.uniroma1.it/sites/default/files/styles/user_picture/public/pictures/picture-36884-1613407296.jpg?itok=UhHeDs_8",
         "email": "iacopo.masi@uniroma1.it"
     },
-    {
+    "AP": {
         "id": "AP",
         "name": "Adolfo",
         "surname": "Piperno",
@@ -63,7 +63,7 @@
         "picture": "https://corsidilaurea.uniroma1.it/sites/default/files/styles/user_picture/public/pictures/picture-34332-1601711624.png?itok=o3E0Hf33",
         "email": "adolfo.piperno@uniroma1.it"
     },
-    {
+    "AM": {
         "id": "AM",
         "name": "Annalisa",
         "surname": "Massini",
@@ -72,7 +72,7 @@
         "profile": "https://corsidilaurea.uniroma1.it/it/users/annalisamassiniuniroma1it",
         "picture": "https://corsidilaurea.uniroma1.it/sites/default/files/styles/user_picture/public/pictures/picture-23542-1601624072.png?itok=j5vy7_85"
     },
-    {
+    "TC": {
         "id": "TC",
         "name": "Tiziana",
         "surname": "Calomeri",
@@ -81,7 +81,7 @@
         "profile": "",
         "picture": ""
     },
-    {
+    "AC": {
         "id": "AC",
         "name": "Alessandro",
         "surname": "Checco",
@@ -90,7 +90,7 @@
         "profile": "",
         "picture": ""
     },
-    {
+    "4C": {
         "id": "4C",
         "name": "Walter",
         "surname": "Quattrociocchi",
@@ -99,7 +99,7 @@
         "profile": "",
         "picture": ""
     },
-    {
+    "CI": {
         "id": "CI",
         "name": "Quello",
         "surname": "Di Calcolo Integrale",
@@ -108,4 +108,4 @@
         "profile": "",
         "picture": ""
     }
-]
+}

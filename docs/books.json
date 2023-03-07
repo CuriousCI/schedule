@@ -1,26 +1,17 @@
 [
     {
-        "id": "9780123944245",
-        "url": "file:///D:/university/sd/digital-design.pdf",
-        "name": "Digital Design and Computer Architecture",
-        "pages_per_day": 12,
-        "from": 28,
-        "start": "2022-11-02"
+        "name": "Assembly MIPS",
+        "icon": "import_contacts",
+        "url": "file:///D:/university/books/Computer%20Organization%20and%20Design%20MIPS%20Edition.pdf"
     },
     {
-        "id": "9781792901690",
-        "url": "file:///D:/university/mm/discrete-mathematics.pdf",
-        "name": "Discrete Mathematics",
-        "pages_per_day": 7,
-        "from": 17,
-        "start": "2022-11-02"
+        "name": "Intro to algorithms",
+        "icon": "auto_stories",
+        "url": "file:///D:/university/books/Introduction%20To%20Algorithms.pdf"
     },
     {
-        "id": "9788808064851",
-        "url": "file:///D:/university/cd/analisi.pdf",
-        "name": "Analisi matematica I",
-        "pages_per_day": 7,
-        "from": 9,
-        "start": "2022-11-02"
+        "name": "The new Java",
+        "icon": "menu_book",
+        "url": "file:///D:/university/books/IlNuovoJava.pdf"
     }
 ]

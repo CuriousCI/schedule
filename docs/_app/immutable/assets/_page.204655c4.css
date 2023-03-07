@@ -740,10 +740,26 @@ body {
 }
 hr {
     border: 1px solid;
+    width: 100%;
+    --tw-border-opacity: 1;
+    border-color: rgb(213 196 161 / var(--tw-border-opacity));
 }
-/* td { */
-/*   border-radius: 20px; */
-/* } */
+.dark hr{
+  --tw-border-opacity: 1;
+  border-color: rgb(80 73 69 / var(--tw-border-opacity));
+}
+h1{
+  width: 100%;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+h2 {
+
+}
+h3 {
+
+}
 .ds {
     filter: drop-shadow(5px 5px 4px rgb(0 0 0 / 1));
 }

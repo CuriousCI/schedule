@@ -36,11 +36,20 @@ body {
 
 hr {
     border: 1px solid;
+    @apply w-full border-bg2 dark:border-dbg2;
 }
 
-/* td { */
-/*   border-radius: 20px; */
-/* } */
+h1 {
+    @apply text-4xl font-bold w-full;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
 
 .ds {
     filter: drop-shadow(5px 5px 4px rgb(0 0 0 / 1));

@@ -1,27 +1,27 @@
-[
-    {
+{
+    "CU032": {
         "code": "CU032",
         "room": "aula I",
         "map": "https://www.uniroma1.it/sites/default/files/ACU032.pdf#view=fit&toolbar=0&navpanes=0"
     },
-    {
+    "CU045": {
         "code": "CU045",
         "room": "aula T1",
         "map": "https://web.uniroma1.it/disp/sites/default/files/Mappa%20CITTA%20UNIVERSITARIA.pdf"
     },
-    {
+    "RM025": {
         "code": "RM025",
         "room": "aula informatica 15 / 17",
         "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.671648589064!2d12.514125515799826!3d41.89991817202676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f619c8531af3b%3A0xa5e02560c928639e!2sVia%20Tiburtina%2C%20205%2C%2000185%20Roma%20RM!5e0!3m2!1sit!2sit!4v1664039689665!5m2!1sit!2sit"
     },
-    {
+    "RM111": {
         "code": "RM111",
         "room": "aula magna",
         "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.435642354752!2d12.51290503328173!3d41.90499280525346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6177eefdea53%3A0xc9aaf8ef48892b9a!2sViale%20Regina%20Elena%2C%20295%2C%2000161%20Roma%20RM!5e0!3m2!1sit!2sit!4v1664039864404!5m2!1sit!2sit"
     },
-    {
+    "CU046": {
         "code": "CU046",
         "room": "aula T2",
         "map": "https://web.uniroma1.it/disp/sites/default/files/Mappa%20CITTA%20UNIVERSITARIA.pdf"
     }
-]
+}

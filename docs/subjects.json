@@ -1,50 +1,50 @@
-[
-    {
+{
+    "CD": {
         "id": "CD",
         "code": "101226",
         "teaching": "Calcolo differenziale",
         "color": "red"
     },
-    {
+    "FP": {
         "id": "FP",
         "code": "1015883",
         "teaching": "Fondamenti di programmazione",
         "color": "green"
     },
-    {
+    "MM": {
         "id": "MM",
         "code": "1020420",
         "teaching": "Metodi matematici per l'informatica",
         "color": "blue"
     },
-    {
+    "SD": {
         "id": "SD",
         "code": "1015880",
         "teaching": "Progettazione di sistemi digitali",
         "color": "yellow"
     },
-    {
+    "CI": {
         "id": "CI",
         "code": "101226",
         "teaching": "Calcolo integrale",
         "color": "red"
     },
-    {
+    "MP": {
         "id": "MP",
         "code": "1015883",
         "teaching": "Metodologie di programmazione",
         "color": "green"
     },
-    {
+    "AL": {
         "id": "AL",
         "code": "1020420",
         "teaching": "Introduzione agli algoritmi",
         "color": "blue"
     },
-    {
+    "AR": {
         "id": "AR",
         "code": "1015880",
         "teaching": "Architetture degli elaboratori",
         "color": "yellow"
     }
-]
+}

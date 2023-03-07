@@ -1,0 +1,52 @@
+[
+    {
+        "name": "GitHub exercises",
+        "icon": "qr_code_scanner",
+        "url": "https://github.com/orgs/sapienzastudentsnetwork/repositories"
+    },
+    {
+        "name": "Notes bot",
+        "icon": "document_scanner",
+        "url": "https://t.me/SSN_Notes_Bot"
+    },
+    {
+        "name": "Exyss' notes",
+        "icon": "add_notes",
+        "url": "https://github.com/Exyss/university-notes"
+    },
+    {
+        "name": "Assembly google group",
+        "icon": "developer_board",
+        "url": "https://groups.google.com/u/1/a/uniroma1.it/g/architettura-degli-elaboratori-2022-23-a-l"
+    },
+    {
+        "name": "Asembly classroom",
+        "icon": "settings_input_antenna",
+        "url": "https://classroom.google.com/u/1/c/NTYyODM4NDA2NDcy"
+    },
+    {
+        "name": "Asembly slides",
+        "icon": "device_hub",
+        "url": "https://drive.google.com/drive/folders/1JU1D1xdahVb5hvRDG8aHQFZ73a6arFNo"
+    },
+    { 
+        "name": "Calculus moodle", 
+        "icon": "function", 
+        "url": "https://bit.ly/CI202223" 
+    },
+    {
+        "name": "Algorithms forum",
+        "icon": "regular_expression",
+        "url": "https://twiki.di.uniroma1.it/twiki/view/Intro_algo/AD/WebHome"
+    },
+    {
+        "name": "Algorithms slides",
+        "icon": "terminal",
+        "url": "https://twiki.di.uniroma1.it/twiki/view/Intro_algo/AD/Dispense"
+    },
+    {
+        "name": "Java classroom",
+        "icon": "deployed_code",
+        "url": "https://classroom.google.com/u/1/c/NTkzNzA4NTg3MDU5"
+    }
+]
