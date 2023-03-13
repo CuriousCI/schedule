@@ -1,13 +1,13 @@
 const i = [
-  "/schedule/_app/immutable/entry/app.b8739e1b.mjs",
+  "/schedule/_app/immutable/entry/app.5151629e.mjs",
   "/schedule/_app/immutable/chunks/0.02dd8724.mjs",
-  "/schedule/_app/immutable/chunks/1.4d37118c.mjs",
+  "/schedule/_app/immutable/chunks/1.081c5f0f.mjs",
   "/schedule/_app/immutable/chunks/2.7d9695c5.mjs",
   "/schedule/_app/immutable/chunks/_layout.68ca539e.mjs",
   "/schedule/_app/immutable/chunks/index.46714108.mjs",
-  "/schedule/_app/immutable/chunks/singletons.67bd7dc3.mjs",
-  "/schedule/_app/immutable/entry/start.6b4bf0e1.mjs",
-  "/schedule/_app/immutable/entry/error.svelte.37a53510.mjs",
+  "/schedule/_app/immutable/chunks/singletons.2ffc8dda.mjs",
+  "/schedule/_app/immutable/entry/start.e79c8e4d.mjs",
+  "/schedule/_app/immutable/entry/error.svelte.9eb5a633.mjs",
   "/schedule/_app/immutable/entry/layout.svelte.b1d317cf.mjs",
   "/schedule/_app/immutable/entry/_layout.ts.9f8e3aa7.mjs",
   "/schedule/_app/immutable/assets/_page.c96b6330.css",
@@ -29,7 +29,7 @@ const i = [
   "/schedule/subjects.json",
   "/schedule/teachers.json",
   "/schedule/wooclap.svg"
-], l = "1678180343399", c = self, o = `cache${l}`, h = i.concat(d), p = new Set(h);
+], l = "1678700473416", c = self, o = `cache${l}`, h = i.concat(d), p = new Set(h);
 c.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(o).then((s) => s.addAll(h)).then(() => {
