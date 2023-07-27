@@ -1,0 +1,53 @@
+{
+    "universal": [
+        { "title": "", "icon": "", "url": "" },
+    ],
+    "years": {
+        "semester1": [
+            { "title": "Calcolo Differenziale", "icon": "function", "url": "https://www1.mat.uniroma1.it/people/birindelli/esercizi/indice.html" },
+            { "title": "PSD Drive", "icon": "counter_1", "url": "https://drive.google.com/drive/folders/1yrcePCVNrA-kGAHzX5JdqRXziNENfjt4UW_YhLIxZPPUFavHArMU1fnTGKoX1CRnKPKh-xg2" },
+            { "title": "PSD Slide", "icon": "counter_1", "url": "https://drive.google.com/drive/folders/1skxQUtCXdGWQkQqhmPTbG5siH_ZIsKwq" },
+            { "title": "PSD Tutoraggio", "icon": "counter_1", "url": "https://drive.google.com/drive/folders/11BTEZDZ7Tw_bCKUALQ3jtYW88xFO_ncD" },
+            { "title": "PSD Compilatore Verilog", "icon": "counter_1", "url": "https://digitaljs.tilk.eu/" },
+            { "title": "PSD Esercizi Svolti", "icon": "counter_1", "url": "https://github.com/sapienzastudentsnetwork/psd2223" },
+            { "title": "Python Q2A", "icon": "code", "url": "https://q2a.di.uniroma1.it/" },
+            { "title": "Python Eserciziario", "icon": "code", "url": "https://q2a.di.uniroma1.it/assets/eserciziario-python/it/script/" },
+            { "title": "Python Homework", "icon": "code", "url": "https://q2a.di.uniroma1.it/HW22" },
+            { "title": "Metodi Sito", "icon": "functions", "url": "https://sites.google.com/uniroma1.it/mmi2223/home" },
+            { "title": "Metodi Dispense", "icon": "functions", "url": "https://sites.google.com/uniroma1.it/mmi2223/dispense" },
+            { "title": "Metodi Esercizi Svolti", "icon": "functions", "url": "https://github.com/sapienzastudentsnetwork/mmi2122" },
+        ],
+        "semester2": [
+            { "title": "Calcolo Integrale Moodle", "icon": "function", "url": "https://elearning.uniroma1.it/enrol/index.php?id=15354" },
+            { "title": "Calcolo Integrale Esercizi Svolti", "icon": "function", "url": "https://github.com/sapienzastudentsnetwork/calcint2223" },
+            { "title": "Architettura Google Group", "icon": "devices", "url": "" },
+            { "title": "Architettura Classroom", "icon": "devices", "url": "" },
+            { "title": "Architettura Drive", "icon": "devices", "url": "" },
+            { "title": "Architettura Slide", "icon": "devices", "url": "" },
+            { "title": "Architettura Esami", "icon": "devices", "url": "" },
+            { "title": "Architettura Cheat Sheet", "icon": "devices", "url": "" },
+            { "title": "Architettura Esercizi Svolti", "icon": "devices", "url": "" },
+            { "title": "Java Classroom", "icon": "code", "url": "" },
+            { "title": "Algoritmi Forum", "icon": "regular_expression", "url": "" },
+            { "title": "Algoritmi Dispense", "icon": "regular_expression", "url": "" },
+            { "title": "Algoritmi Vecchi Esami", "icon": "regular_expression", "url": "" },
+        ]
+    },
+    "year2": {
+        "semester1": [
+        { "title": "", "icon": "", "url": "" }
+        ],
+        "semester2": [
+        { "title": "", "icon": "", "url": "" }
+        ]
+    },
+    "year3": {
+        "semester1": [
+        { "title": "", "icon": "", "url": "" }
+
+        ],
+        "semester2": [
+        { "title": "", "icon": "", "url": "" }
+        ]
+    },
+}

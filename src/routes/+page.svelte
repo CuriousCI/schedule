@@ -18,6 +18,7 @@
 		timetable: Map<string, Class[]> = new Map(),
 		links: Link[] = [],
 		books: Link[] = [],
+		useful_links: any[] = [],
 		hash: string | null,
 		action = 'Upcoming',
 		actions = [
@@ -40,6 +41,7 @@
 		}
 
 		links = await (await fetch('links.json')).json();
+		links = await (await fetch('useful_links.json')).json();
 		books = await (await fetch('books.json')).json();
 		teachers = toMap(await (await fetch('teachers.json')).json());
 		buildings = toMap(await (await fetch('buildings.json')).json());
@@ -83,6 +85,12 @@
 			{timetable}
 		/>
 	{:else if action == 'Tools'}
+		<!-- {#each useful_links.universal as { name, icon, url }} -->
+		<!-- 	<a href={url} target="_blank" rel="noreferrer" class="w-full px-4 text-xl"> -->
+		<!-- 		<span class="material-symbols-outlined align-text-bottom">{icon}</span> -->
+		<!-- 		{name} -->
+		<!-- 	</a> -->
+		<!-- {/each} -->
 		<h1>Links</h1>
 		{#each links as { name, icon, url }}
 			<a href={url} target="_blank" rel="noreferrer" class="w-full px-4 text-xl">
